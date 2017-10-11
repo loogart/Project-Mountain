@@ -1,10 +1,9 @@
 /* card design */
-
 .card {
     border: 1px solid #E1E4E7;
     background-color: #fff;
-    -webkit-transition: all .25s ease-in;
-    transition: all .25s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
     margin-bottom: 30px;
     width: 100%;
 }
@@ -37,6 +36,28 @@
 
 .card p.description {
     color: #333333;
+}
+
+/* card role extention */
+
+.card-role {
+    padding: 20px;
+}
+
+.img-role {
+    width: 69px;
+    height: 69px;
+    border-radius: 69px;
+    margin-bottom: 15px;
+    background-color: #ccc;
+}
+
+.card-role a{
+    text-decoration: none;
+}
+
+.card-role p{
+    color:#9B9B9B;
 }
 
 /* registration panel */

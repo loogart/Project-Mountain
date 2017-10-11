@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Event Page</title>
+    <title>Select your role</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- Meta data -->
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -131,7 +131,8 @@
                 <div class="row">
                     <ol class="breadcrumb">
                         <li><a href="select-event.html">Home</a></li>
-                        <li><a href="#!">G7 Summit</a></li>
+                        <li><a href="event.html">G7 Summit</a></li>
+                        <li><a href="#!">Select your role</a></li>
                     </ol>
                 </div>
             </div>
@@ -139,44 +140,86 @@
     </header>
     <main role="main" property="mainContentOfPage" class="container">
         <div class="row">
-            <div class="col-sm-7">
-                <h1 property="name" id="wb-cont">G7 Summit Event</h1>
-                <p style="margin:20px auto">The 2018 Group of 7 (G7) will be held in Charlevoix, Québec. We are pleased to welcome you to this event and we will facilitate your registration and accreditation process. </p>
-                <img class="img-responsive" src="./custom/images/card1.jpg">
+            <div class="col-sm-8">
+                <h1 property="name" id="wb-cont">Select your role</h1>
+                <p style="margin:20px auto">Please select your role within your organization with respect to the event you will be attending.</p>
             </div>
-            <div class="col-sm-5">
-                <div class="panel panel-default panel-register">
-                    <div class="panel-body">
-                        <h2 style="margin-top:0;">Register</h2>
-                        <p>Sign up to get accredited by the Canadian Summits Office and to create your event badge.</p>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <p class="terms">By clicking Create account, you agree to our terms and that you have read our <a href="http://www.international.gc.ca/gac-amc/publications/notices-avis.aspx?lang=eng" target="_blank">Privacy Policy.</a></p>
-                            <a type="submit" class="btn btn-success btn-lg btn-block" href="select-role.html">Create your account</a>
-                            <a class="sign-in wb-lbx" href="#centred-popup" aria-controls="centred-popup" role="button">Already signed up for this event? Sign in.</a>
-                        </form>
-                    </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Media</h3>
+                       </span>
+                    </a>
+                    <p>Includes journalists, photographers and media support staff</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Delegate</h3>
+                       </span>
+                    </a>
+                    <p>Foreign ministers, their staff, family and special friends.</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Suppliers</h3>
+                       </span>
+                    </a>
+                    <p>Includes catering, hotel, delivery company and other support staff</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Secretariat</h3>
+                       </span>
+                    </a>
+                    <p>Official employees and members of the organizing committee</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Official guests</h3>
+                       </span>
+                    </a>
+                    <p>Use this link if you received an official invitation letter</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="card card-role text-center">
+                    <a href="registration.html">
+                       <span>
+                            <img class="img-role">
+                            <h3 style="margin-top:0;">Other</h3>
+                       </span>
+                    </a>
+                    <p>Other guests.</p>
                 </div>
             </div>
         </div>
 
         <!-- sign in popup -->
         <section id="centred-popup" class="mfp-hide modal-dialog modal-content overlay-def">
-<!--
             <header class="modal-header">
                 <h2 class="modal-title">Sign in to your account</h2>
             </header>
--->
-            <img class="img-responsive" src="./custom/images/card1.jpg">
             <div class="modal-body">
-               <h2 style="margin:0 auto 20px">Sign in to your account</h2>
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
@@ -186,7 +229,7 @@
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                    <a type="submit" class="btn btn-primary btn-block" href="registration.html">Sign in</a>
+                    <a type="submit" class="btn btn-primary btn-block" href="select-role.html">Sign in</a>
                 </form>
             </div>
             <div class="modal-footer">
