@@ -5,7 +5,7 @@
 
 // fix object fit on IE
 if ( ! Modernizr.objectfit ) {
-  $('.card img').each(function () {
+  $('.card-image-container').each(function () {
     var $container = $(this),
         imgUrl = $container.find('img').prop('src');
     if (imgUrl) {
