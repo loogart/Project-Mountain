@@ -148,7 +148,7 @@
         <div class="row">
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Media</h3>
@@ -159,7 +159,7 @@
             </div>
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Delegate</h3>
@@ -170,7 +170,7 @@
             </div>
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Suppliers</h3>
@@ -181,7 +181,7 @@
             </div>
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Secretariat</h3>
@@ -192,7 +192,7 @@
             </div>
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Official guests</h3>
@@ -203,7 +203,7 @@
             </div>
             <div class="col-xs-6 col-sm-4">
                 <div class="card card-role text-center">
-                    <a href="registration.html">
+                    <a href="#requirements-popup" aria-controls="centred-popup-modal" class="wb-lbx lbx-modal" role="button">
                        <span>
                             <img class="img-role">
                             <h3 style="margin-top:0;">Other</h3>
@@ -214,26 +214,51 @@
             </div>
         </div>
 
-        <!-- sign in popup -->
-        <section id="centred-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+        <!-- requirements popup -->
+        <section id="requirements-popup" class="mfp-hide modal-dialog modal-content overlay-def">
             <header class="modal-header">
-                <h2 class="modal-title">Sign in to your account</h2>
+                <p class="modal-title">Media registration</p>
             </header>
             <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <a type="submit" class="btn btn-primary btn-block" href="select-role.html">Sign in</a>
-                </form>
+                <h1 style="margin-top:0">Before you begin</h1>
+                <p>Please note, for security reasons, it is necessary to create an account using a valid email address.</p>
+                <p>It will take approximately 15 minutes to complete the registration form. Only one profile will be permitted per applicant (per email address). <b><u>Please ensure you have the required documents (listed below) prior to beginning. You will not be able to complete the registration form without the required documents.</u></b></p>
+                <p>You need to have the following ready:</p>
+                <h3>1. Photo of yourself</h3>
+                <p>The photo you supply will be printed on your access badge as is.</p>
+                <ul>
+                    <li>Recent passport-style photo</li>
+                    <li>A photograph of your drivers lisence, passport or any other picture id will not be accepted</li>
+                    <li>Only the following formats are accepted .jpg, jpeg or gif</li>
+                    <li>Maximum file size of 2 MB</li>
+                    <li>The photographs must show the full front view of the head, with the face in the middle of the image</li>
+                    <li>Pale or white background</li>
+                    <li>No hats or sunglasses</li>
+                    <li>Photo must be in colour</li>
+                </ul>
+                <h3>2. Valid government-issued ID with photo</h3>
+                <p>Acceptable forms of ID</p>
+                <ul>
+                    <li>Canadian citizens: Driver's License, health card or Passport</li>
+                    <li>Non-Canadian citizens: Passport or permanent resident card only</li>
+                </ul>
+                <h3>3. Letter of assignment</h3>
+                <ul>
+                    <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                    <li>The letter must name the applicant and his/her role within the organization</li>
+                    <li>The letter must indicate that the applicant's assignment covers the 2017 Royal Tour</li>
+                    <li>The letter must be written on official letterhead and be signed by an authorized individual and include that person's contact details</li>
+                </ul>
+                <h3>4. Valid media credential</h3>
+                <ul>
+                    <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                    <li>The media credential must be issued by a recognized professional body</li>
+                    <li>A valid passport may be provided in lieu of a media credential</li>
+                </ul>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-default popup-modal-dismiss" type="button">Cancel</button>
+                <button class="btn btn-default popup-modal-dismiss" type="button">Back</button>
+                <a class="btn btn-success" href="registration.html" role="button">I have all documents ready.</a>
             </div>
         </section>
 

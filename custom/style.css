@@ -78,3 +78,9 @@
 .panel-register a.btn {
     margin-bottom: 10px;
 }
+
+/* progress bar customization */
+
+progress {
+    width:100%!important;
+}
