@@ -41,12 +41,12 @@
 
 /*object fit fix */
 
-.card .compat-object-fit {
+.card img .compat-object-fit {
     background-size: cover;
     background-position: center center;
 }
 
-.card .compat-object-fit img {
+.card img .compat-object-fit {
     opacity: 0;
 }
 
