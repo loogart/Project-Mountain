@@ -3,13 +3,15 @@
 .card {
     border: 1px solid #E1E4E7;
     background-color: #fff;
-    -webkit-transition:all .25s ease-in;
-    transition:all .25s ease-in;
-    margin-bottom:30px;
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
-.card:hover, .card:active{
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.1);
+.card:hover,
+.card:active {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -37,21 +39,33 @@
     color: #333333;
 }
 
+/*object fit fix */
+
+.card .compat-object-fit {
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .compat-object-fit img {
+    opacity: 0;
+}
+
 /* registration panel */
 
-.panel-register{
-    margin-top:30px;
+.panel-register {
+    margin-top: 30px;
 }
 
-.panel-register .form-control, .modal-body .form-control{
-    width:100%
+.panel-register .form-control,
+.modal-body .form-control {
+    width: 100%
 }
 
-.panel-register p.terms, .panel-register a.sign-in{
+.panel-register p.terms,
+.panel-register a.sign-in {
     font-size: 1.3rem;
 }
 
 .panel-register a.btn {
     margin-bottom: 10px;
 }
-
