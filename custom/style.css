@@ -1,4 +1,5 @@
 /* card design */
+
 .card {
     border: 1px solid #E1E4E7;
     background-color: #fff;
@@ -51,12 +52,12 @@
     background-color: #ccc;
 }
 
-.card-role a{
+.card-role a {
     text-decoration: none;
 }
 
-.card-role p{
-    color:#9B9B9B;
+.card-role p {
+    color: #9B9B9B;
 }
 
 /* registration panel */
@@ -66,7 +67,8 @@
 }
 
 .panel-register .form-control,
-.modal-body .form-control {
+.modal-body .form-control,
+.registration .form-control {
     width: 100%
 }
 
@@ -80,6 +82,10 @@
 }
 
 /* progress bar customization */
+
+section.progress-bar-holder{
+    padding-top:26px;
+}
 
 .flexer,
 .progress-indicator {
@@ -151,7 +157,7 @@
 .progress-indicator > li .bubble:before {
     display: block;
     position: absolute;
-    top:15px;
+    top: 15px;
     width: 100%;
     height: 12px;
     content: '';
@@ -293,3 +299,18 @@ screen and (max-width:400px) {
     }
 }
 
+/* registration datalist customization */
+
+.wb-al-cnt .wb-al {
+    border: 1px solid #ccc;
+}
+
+.wb-al a {
+    border-bottom: 1px dotted #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wb-al li:nth-child(odd) {
+    background-color: #f8f8f8;
+}
