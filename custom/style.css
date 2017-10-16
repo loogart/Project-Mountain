@@ -83,8 +83,8 @@
 
 /* progress bar customization */
 
-section.progress-bar-holder{
-    padding-top:26px;
+section.progress-bar-holder {
+    padding-top: 26px;
 }
 
 .flexer,
@@ -313,4 +313,9 @@ screen and (max-width:400px) {
 
 .wb-al li:nth-child(odd) {
     background-color: #f8f8f8;
+}
+
+ul.requirements li, p.requirements {
+    font-size: 13px;
+        margin-top:5px;
 }

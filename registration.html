@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Registration Form</title>
+    <title>Registration | Step 1</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- Meta data -->
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -20,11 +20,11 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!--<![endif]-->
     <!--[if lt IE 9]>
-		<link href="../../GCWeb/assets/favicon.ico" rel="shortcut icon" />
+		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
 		
-		<link rel="stylesheet" href="../../GCWeb/css/ie8-theme.min.css" />
+		<link rel="stylesheet" href="./GCWeb/css/ie8-theme.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
     <!--[if lte IE 9]>
 		
@@ -84,7 +84,7 @@
             </section>
             <div class="row">
                 <div class="brand col-xs-8 col-sm-9 col-md-6">
-                    <a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data="../../GCWeb/assets/sig-blk-en.svg"></object><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+                    <a href="https://www.canada.ca/en.html"><object type="image/svg+xml" tabindex="-1" data="./GCWeb/assets/sig-blk-en.svg"></object><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
                 </div>
                 <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
                     <h2>Search and menus</h2>
@@ -111,7 +111,7 @@
                 </section>
             </div>
         </div>
-        <nav role="navigation" id="wb-sm" data-ajax-replace="../../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <nav role="navigation" id="wb-sm" data-ajax-replace="./ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
             <div class="container nvbar">
                 <h2>Topics menu</h2>
                 <div class="row">
@@ -149,9 +149,9 @@
                     <div class="col-sm-12">
                         <section class="progress-bar-holder">
                             <ul class="progress-indicator">
-                                <li class="completed">
+                                <li class="active">
                                     <span class="bubble"></span>
-                                    <i class="fa fa-check-circle" style="color:forestgreen"></i> <a href="#!">1. Organization</a>
+                                    <a href="#!">1. Organization</a>
                                 </li>
                                 <li>
                                     <span class="bubble"></span> 2. Badge.
@@ -164,28 +164,6 @@
                                 </li>
                             </ul>
                         </section>
-                        <!--
-                    Pre-start
-                       1. Select your role (1)
-                       Email, password
-                       security code (suppliers, official guests, secretariat, as applicable)
-                       2. Create security question (2)
-                    Section 1
-                       3. Organization (4)
-                       11. Letter of assignment (UPLOAD)
-                       12. Media credential (UPLOAD) (1)
-                    Section 2
-                       8. Access badge text (3)
-                      10. Badge Photo (UPLOAD)
-                    Section 3
-                       4. Personal info (12)
-                       9. Employment (1-2)
-                       5. Phone (2)
-                       6. Residences (8+)
-                       7. Gov ID (3)
-                    Section 4 
-                        Review and confirmation               
-                   -->
                         <h1>1. Your organization</h1>
                         <p>Please complete the following required information about the organization you are a part of. All fields are required prior to moving onto the next section.</p>
                     </div>
@@ -194,6 +172,7 @@
                             <div class="wb-frmvld">
                                 <h2>A. Organization</h2>
                                 <form action="#" method="get" id="validation-signup-2">
+                                    <!-- organization select -->
                                     <div class="form-group">
                                         <!-- /input-group -->
                                         <label for="city" class="required">Your organization</label>
@@ -227,6 +206,7 @@
                                             <!--[if lte IE 9]></select><![endif]-->
                                         </datalist>
                                     </div>
+                                    <!-- country select -->
                                     <div class="form-group">
                                         <label for="title1" class="required">
                                                 <span class="field-name">Organization Country</span> 
@@ -474,6 +454,7 @@
                                             <option value="256">SOUTH SUDAN</option>
                                         </select>
                                     </div>
+                                    <!-- profession select -->
                                     <div class="form-group">
                                         <label for="title1" class="required">
                                             <span class="field-name">Your profession</span> 
@@ -487,8 +468,9 @@
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
+                                    <!-- other profession -->
                                     <div class="form-group">
-                                        <label for="word1" class="required"><span class="field-name">If other, please specify</span></label>
+                                        <label for="word1"><span class="field-name">If other, please specify</span></label>
                                         <input class="form-control" id="other1" name="other1" type="text" data-rule-maxWords="5" />
                                     </div>
                                 </form>
@@ -499,10 +481,17 @@
                             <div class="wb-frmvld">
                                 <h2>B. Letter of assignment</h2>
                                 <form action="#" method="get" id="validation-signup-2">
+                                    <!-- upload letter -->
                                     <div class="form-group">
-                                        <label for="file1" class="required"><span class="field-name">File</span> <strong class="required">(required)</strong></label>
+                                        <label for="file1" class="required"><span class="field-name">Upload letter of assignment</span> <strong class="required">(required)</strong></label>
                                         <input id="file1" name="file1" type="file" required="required" />
                                     </div>
+                                    <ul class="requirements">
+                                        <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                                        <li>The letter must name the applicant and his/her role within the organization</li>
+                                        <li>The letter must indicate that the applicant's assignment covers the 2017 Royal Tour</li>
+                                        <li>The letter must be written on official letterhead and be signed by an authorized individual and include that person's contact details</li>
+                                    </ul>
                                 </form>
                                 <hr>
                             </div>
@@ -511,27 +500,30 @@
                             <div class="wb-frmvld">
                                 <h2>C. Media credentials</h2>
                                 <form action="#" method="get" id="validation-signup-2">
+                                    <!-- upload credentials -->
                                     <div class="form-group">
-                                        <label for="file1" class="required"><span class="field-name">File</span> <strong class="required">(required)</strong></label>
+                                        <label for="file1" class="required"><span class="field-name">Upload media credentials</span> <strong class="required">(required)</strong></label>
                                         <input id="file1" name="file1" type="file" required="required" />
                                     </div>
+                                    <ul class="requirements">
+                                        <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                                        <li>The media credential must be issued by a recognized professional body</li>
+                                        <li>A valid passport may be provided in lieu of a media credential</li>
+                                    </ul>
                                 </form>
                                 <hr>
-
                             </div>
                         </div>
                     </section>
                 </div>
-
-
                 <ul class="list-inline text-right">
-                    <li><a href="#!" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous step</a></li>
+<!--                    <li><a href="" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous step</a></li>-->
                     <li><a href="registration-step2.html" class="btn btn-primary">Go to step 2 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
                 </ul>
             </main>
         </div>
     </div>
-
+    
     <footer role="contentinfo" id="wb-info">
         <nav role="navigation" class="container wb-navcurr">
             <h2 class="wb-inv">About government</h2>
@@ -564,7 +556,7 @@
                         <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
                     </div>
                     <div class="col-xs-6 col-md-2 text-right">
-                        <object type="image/svg+xml" tabindex="-1" role="img" data="../../GCWeb/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+                        <object type="image/svg+xml" tabindex="-1" role="img" data="./GCWeb/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
                     </div>
                 </div>
             </div>
@@ -575,7 +567,7 @@
     <script src="./wet-boew/js/wet-boew.min.js"></script>
     <!--<![endif]-->
     <!--[if lt IE 9]>
-		<script src="../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
 		
 		<![endif]-->
     <script src="./GCWeb/js/theme.min.js"></script>
