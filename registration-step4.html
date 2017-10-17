@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Registration | Step 3</title>
+    <title>Registration | Step 4</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- Meta data -->
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -157,10 +157,10 @@
                             <li class="completed">
                                 <span class="bubble"></span> <i class="fa fa-check-circle" style="color:forestgreen"></i> <a href="registration-step2.html">2. Badge</a>
                             </li>
-                            <li class="active">
-                                <span class="bubble"></span> 3. Personal
+                            <li class="completed">
+                                <span class="bubble"></span> <i class="fa fa-check-circle" style="color:forestgreen"></i> <a href="registration-step3.html">3. Personal</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <span class="bubble"></span> 4. Contact
                             </li>
                             <li>
@@ -168,103 +168,99 @@
                             </li>
                         </ul>
                     </section>
-                    <h1>3. Your personal information</h1>
-                    <p>Please provide your personal information related to your names, cititenship and date of birth in section A. You will also need to provide your government ID information and employment status in sections B and C respectively. </p>
+                    <!--
+                    Section 3
+                       4. Personal info (12)
+                       9. Employment (1-2)
+                       7. Gov ID (3)
+                       5. Phone (2)
+                       6. Residences (8+)
+                    Section 4 
+                        Review and confirmation               
+                   -->
+                    <h1>4. Your contact and residence information</h1>
+                    <p>The following information and photograph will appear on your official badge for the event.</p>
                 </div>
             </div>
-            <!-- registration meat and potatoes -->
             <section class="registration">
                 <div class="row">
                     <div class="col-sm-12">
+
                         <div class="wb-frmvld">
-                            <h2>A. Names and citizenship</h2>
-                            <form action="#" method="get" id="validation-signup-4">
-
-                                <!-- row salutation-->
+                            <h2>A. Contact information</h2>
+                            <form action="#" method="get" id="validation-signup-5">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <!-- salutation select -->
-                                        <div class="form-group">
-                                            <label for="salutation1" class="required">
-                                                    <span class="field-name">Salutation</span> 
-                                                </label>
-                                            <select for="salutation1" class="form-control" id="salutation1" name="salutation1" required="required">
-                                                    <option label="Select a salutation"></option>
-                                                    <option value="1">Dr.</option>
-                                                    <option value="2">Mr.</option>
-                                                    <option value="3">Mrs.</option>
-                                                    <option value="4">Ms.</option>
-                                                    <option value="5">Prof.</option>
-                                                </select>
-                                        </div>
+                                    <div class="col-sm-6">
+                                        <!-- phone 1 select -->
+                                        <label for="phone1" class="required">
+                                                    <span class="field-name">Main phone number</span> 
+                                            </label>
+
+                                        <input for="phone1" id="phone1" name="phone1" class="form-control input-phone-1" placeholder="001 (###) ###-####" required="required" />
+                                        <p class="requirements">What is my <a href="https://countrycode.org" target="_blank">country code</a>?</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <!-- gender select -->
-                                        <div class="form-group">
-                                            <label for="gender1" class="required">
-                                                    <span class="field-name">Gender</span> 
-                                                </label>
-                                            <select class="form-control" id="gender1" name="gender1" required="required">
-                                                    <option label="Select a gender"></option>
-                                                    <option value="1">Female</option>
-                                                    <option value="2">Male</option>
-                                                </select>
-                                            <p class="requirements">As indicated on your passport</p>
-                                        </div>
+                                    <div class="col-sm-6">
+                                        <!-- phone 2 select -->
+                                        <label for="phone2">
+                                                <span class="field-name">Backup phone number</span> 
+                                            </label>
+                                        <input for="phone2" id="phone2" name="phone2" class="form-control input-phone-2" placeholder="001 (###) ###-####" />
                                     </div>
                                 </div>
+                                <hr>
 
-                                <!-- row names -->
+                                <h2>B. Residence information</h2>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <!-- last name -->
-                                        <div class="form-group">
-                                            <label for="lastname1" class="required"><span class="field-name">Family name</span></label>
-                                            <input class="form-control" id="lastname1" name="lastname1" type="text" data-rule-maxWords="4" placeholder="Family name" required="required" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- previous last name -->
-                                        <div class="form-group">
-                                            <label for="lastname2"><span class="field-name">Previous family name</span></label>
-                                            <input class="form-control" id="last-name1" name="last-name1" type="text" data-rule-maxWords="10" placeholder="If applicable" />
-                                        </div>
-                                    </div>
+                                    <!-- ADDRESS BLOCK TO DUPLICATE -->
+                                    <div class="col-sm-10">
+                                        <h3>B.1 Primary residence</h3>
+                                        <!-- primary address inputs -->
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="form-group">
+                                                    <label for="address1" class="required">
+                                                            <span class="field-name">Street number</span> 
+                                                        </label>
+                                                    <input for="address1" id="address1" name="address1" type="text" class="form-control" placeholder="Street number" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
 
-                                    <div class="col-md-6">
-                                        <!-- first name -->
-                                        <div class="form-group">
-                                            <label for="firstname1" class="required"><span class="field-name">Given name</span></label>
-                                            <input class="form-control" id="firstname1" name="firstname1" type="text" data-rule-maxWords="2" placeholder="Given name" required="required" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- previous given name -->
-                                        <div class="form-group">
-                                            <label for="firstname2"><span class="field-name">Previous given name</span></label>
-                                            <input class="form-control" id="firstname2" name="firstname2" type="text" data-rule-maxWords="10" placeholder="If applicable" />
-                                        </div>
-                                    </div>
+                                                <div class="form-group">
+                                                    <label for="address1" class="required">
+                                                            <span class="field-name">Street name</span> 
+                                                        </label>
+                                                    <input for="address1" id="address1" name="address1" type="text" class="form-control" placeholder="Street name" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
 
-                                    <div class="col-md-6">
-                                        <!-- middle name -->
-                                        <div class="form-group">
-                                            <label for="middlename2"><span class="field-name">Middle name (if applicable)</span></label>
-                                            <input class="form-control" id="middlename1" name="middlename1" type="text" data-rule-maxWords="10" placeholder="Middle name" />
+                                                <div class="form-group">
+                                                    <label for="address1" class="required">
+                                                            <span class="field-name">Apartment number</span> 
+                                                        </label>
+                                                    <input for="apt1" id="apt1" name="apt1" type="text" class="form-control" placeholder="Apt">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <!-- citizenship-->
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <!-- citizenship select -->
-                                        <div class="form-group">
-                                            <label for="citizenship1" class="required">
-                                                    <span class="field-name">Your citizenship</span> 
+                                        <!-- city and country -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="city1" class="required">
+                                                    <span class="field-name">City</span> 
                                                 </label>
-                                            <select class="form-control" for="citizenship1" id="citizenship1" name="citizenship1" required="required">
-                                                    <option label="Select your citizenship"></option>
+                                                    <input for="city1" id="city1" name="city1" type="text" class="form-control" placeholder="City" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- citizenship select -->
+                                                <div class="form-group">
+                                                    <label for="country2" class="required">
+                                                    <span class="field-name">Country</span> 
+                                                </label>
+                                                    <select class="form-control" for="country2" id="country2" name="country2" required="required">
+                                                    <option label="Select residence country"></option>
                                                     <option value="1"> AFGHANISTAN</option>
                                                     <option value="2"> ÅLAND ISLANDS</option>
                                                     <option value="3"> ALBANIA</option>
@@ -505,339 +501,65 @@
                                                     <option value="248"> ZIMBABWE</option>
                                                     <option value="256"> SOUTH SUDAN</option>
                                                 </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- city and country -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <!-- province / state select -->
+                                                <div class="form-group">
+                                                    <label for="province1" class="required">
+                                                            <span class="field-name">Province/State</span> 
+                                                        </label>
+                                                    <select for="province1" class="form-control" id="province1" name="province1" required="required">
+                                                            <option label="Select province/state"></option>
+                                                            <option value="1">Quebec</option>
+                                                            <option value="2">Ontario</option>
+                                                            <option value="3">Alberta</option>
+                                                            <option value="4">Saskatchewan</option>
+                                                            <option value="5">Manitoba</option>
+                                                            <option value="6">British-Columbia</option>
+                                                            <option value="7">New-Brunswick</option>
+                                                            <option value="8">Prince-Edward-Island</option>
+                                                            <option value="9">Nova-Scotia</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="city1" class="required">
+                                                            <span class="field-name">Postal code / ZIP code</span> 
+                                                        </label>
+                                                    <input for="postal1" id="postal1" name="postal1" type="text" class="form-control" placeholder="Postal code / ZIP" required="required">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- years at residence -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <!-- province / state select -->
+                                                <div class="form-group">
+                                                    <label for="years1" class="required">
+                                                            <span class="field-name">Number of years at this residence</span> 
+                                                        </label>
+                                                    <select for="years1" class="form-control" id="years1" name="years1" required="required">
+                                                            <option label="How many years?"></option>
+                                                            <option value="1">Less than 1 year</option>
+                                                            <option value="2">1 year</option>
+                                                            <option value="3">2 years</option>
+                                                            <option value="4">3 years</option>
+                                                            <option value="5">Over 3 years</option>
+                                                        </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <!-- country of birth select -->
-                                        <div class="form-group">
-                                            <label for="countryofbirth1" class="required">
-                                                <span class="field-name">Your country of birth</span> 
-                                            </label>
-                                            <select class="form-control" for="countryofbirth1" id="countryofbirth1" name="countryofbirth1" required="required">
-                                                <option label="Select your country of birth"></option>
-                                                <option value="1"> AFGHANISTAN</option>
-                                                <option value="2"> ÅLAND ISLANDS</option>
-                                                <option value="3"> ALBANIA</option>
-                                                <option value="4"> ALGERIA</option>
-                                                <option value="5"> AMERICAN SAMOA</option>
-                                                <option value="6"> ANDORRA</option>
-                                                <option value="7"> ANGOLA</option>
-                                                <option value="8"> ANGUILLA</option>
-                                                <option value="9"> ANTARCTICA</option>
-                                                <option value="10"> ANTIGUA AND BARBUDA</option>
-                                                <option value="11"> ARGENTINA</option>
-                                                <option value="12"> ARMENIA</option>
-                                                <option value="13"> ARUBA</option>
-                                                <option value="14"> AUSTRALIA</option>
-                                                <option value="15"> AUSTRIA</option>
-                                                <option value="16"> AZERBAIJAN</option>
-                                                <option value="17"> BAHAMAS</option>
-                                                <option value="18"> BAHRAIN</option>
-                                                <option value="19"> BANGLADESH</option>
-                                                <option value="20"> BARBADOS</option>
-                                                <option value="21"> BELARUS</option>
-                                                <option value="22"> BELGIUM</option>
-                                                <option value="23"> BELIZE</option>
-                                                <option value="24"> BENIN</option>
-                                                <option value="25"> BERMUDA</option>
-                                                <option value="26"> BHUTAN</option>
-                                                <option value="27"> BOLIVIA</option>
-                                                <option value="28"> BONAIRE, SINT EUSTATIUS AND SABA</option>
-                                                <option value="29"> BOSNIA AND HERZEGOVINA</option>
-                                                <option value="30"> BOTSWANA</option>
-                                                <option value="31"> BOUVET ISLAND</option>
-                                                <option value="32"> BRAZIL</option>
-                                                <option value="33"> BRITISH INDIAN OCEAN TERRITORY</option>
-                                                <option value="34"> BRUNEI DARUSSALAM</option>
-                                                <option value="35"> BULGARIA</option>
-                                                <option value="36"> BURKINA FASO</option>
-                                                <option value="37"> BURUNDI</option>
-                                                <option value="38"> CAMBODIA</option>
-                                                <option value="39"> CAMEROON</option>
-                                                <option value="40"> CANADA</option>
-                                                <option value="41"> CAPE VERDE</option>
-                                                <option value="42"> CAYMAN ISLANDS</option>
-                                                <option value="43"> CENTRAL AFRICAN REPUBLIC</option>
-                                                <option value="44"> CHAD</option>
-                                                <option value="45"> CHILE</option>
-                                                <option value="46"> CHINA</option>
-                                                <option value="49"> COLOMBIA</option>
-                                                <option value="50"> COMOROS</option>
-                                                <option value="51"> CONGO</option>
-                                                <option value="53"> COOK ISLANDS</option>
-                                                <option value="54"> COSTA RICA</option>
-                                                <option value="55"> CÔTE D'IVOIRE</option>
-                                                <option value="56"> CROATIA</option>
-                                                <option value="57"> CUBA</option>
-                                                <option value="58"> CURAÇAO</option>
-                                                <option value="59"> CYPRUS</option>
-                                                <option value="60"> CZECH REPUBLIC</option>
-                                                <option value="61"> DENMARK</option>
-                                                <option value="62"> DJIBOUTI</option>
-                                                <option value="63"> DOMINICA</option>
-                                                <option value="64"> DOMINICAN REPUBLIC</option>
-                                                <option value="65"> ECUADOR</option>
-                                                <option value="66"> EGYPT</option>
-                                                <option value="67"> EL SALVADOR</option>
-                                                <option value="68"> EQUATORIAL GUINEA</option>
-                                                <option value="69"> ERITREA</option>
-                                                <option value="70"> ESTONIA</option>
-                                                <option value="71"> ETHIOPIA</option>
-                                                <option value="74"> FIJI</option>
-                                                <option value="75"> FINLAND</option>
-                                                <option value="76"> FRANCE</option>
-                                                <option value="77"> FRENCH GUIANA</option>
-                                                <option value="78"> FRENCH POLYNESIA</option>
-                                                <option value="79"> FRENCH SOUTHERN TERRITORIES</option>
-                                                <option value="80"> GABON</option>
-                                                <option value="81"> GAMBIA</option>
-                                                <option value="82"> GEORGIA</option>
-                                                <option value="83"> GERMANY</option>
-                                                <option value="84"> GHANA</option>
-                                                <option value="85"> GIBRALTAR</option>
-                                                <option value="86"> GREECE</option>
-                                                <option value="87"> GREENLAND</option>
-                                                <option value="88"> GRENADA</option>
-                                                <option value="89"> GUADELOUPE</option>
-                                                <option value="90"> GUAM</option>
-                                                <option value="91"> GUATEMALA</option>
-                                                <option value="92"> GUERNSEY</option>
-                                                <option value="93"> GUINEA</option>
-                                                <option value="94"> GUINEA-BISSAU</option>
-                                                <option value="95"> GUYANA</option>
-                                                <option value="96"> HAITI</option>
-                                                <option value="98"> HOLY SEE (VATICAN CITY STATE)</option>
-                                                <option value="99"> HONDURAS</option>
-                                                <option value="100"> HONG KONG</option>
-                                                <option value="101"> HUNGARY</option>
-                                                <option value="102"> ICELAND</option>
-                                                <option value="103"> INDIA</option>
-                                                <option value="104"> INDONESIA</option>
-                                                <option value="105"> IRAN</option>
-                                                <option value="106"> IRAQ</option>
-                                                <option value="107"> IRELAND</option>
-                                                <option value="108"> ISLE OF MAN</option>
-                                                <option value="109"> ISRAEL</option>
-                                                <option value="110"> ITALY</option>
-                                                <option value="111"> JAMAICA</option>
-                                                <option value="112"> JAPAN</option>
-                                                <option value="113"> JERSEY</option>
-                                                <option value="114"> JORDAN</option>
-                                                <option value="115"> KAZAKHSTAN</option>
-                                                <option value="116"> KENYA</option>
-                                                <option value="117"> KIRIBATI</option>
-                                                <option value="118"> KOREA</option>
-                                                <option value="120"> KUWAIT</option>
-                                                <option value="121"> KYRGYZSTAN</option>
-                                                <option value="122"> LAOS</option>
-                                                <option value="123"> LATVIA</option>
-                                                <option value="124"> LEBANON</option>
-                                                <option value="125"> LESOTHO</option>
-                                                <option value="126"> LIBERIA</option>
-                                                <option value="127"> LIBYA</option>
-                                                <option value="128"> LIECHTENSTEIN</option>
-                                                <option value="129"> LITHUANIA</option>
-                                                <option value="130"> LUXEMBOURG</option>
-                                                <option value="131"> MACAO</option>
-                                                <option value="132"> MACEDONIA</option>
-                                                <option value="133"> MADAGASCAR</option>
-                                                <option value="134"> MALAWI</option>
-                                                <option value="135"> MALAYSIA</option>
-                                                <option value="136"> MALDIVES</option>
-                                                <option value="137"> MALI</option>
-                                                <option value="138"> MALTA</option>
-                                                <option value="139"> MARSHALL ISLANDS</option>
-                                                <option value="140"> MARTINIQUE</option>
-                                                <option value="141"> MAURITANIA</option>
-                                                <option value="142"> MAURITIUS</option>
-                                                <option value="143"> MAYOTTE</option>
-                                                <option value="144"> MEXICO</option>
-                                                <option value="145"> MICRONESIA</option>
-                                                <option value="146"> MOLDOVA</option>
-                                                <option value="147"> MONACO</option>
-                                                <option value="148"> MONGOLIA</option>
-                                                <option value="149"> MONTENEGRO</option>
-                                                <option value="150"> MONTSERRAT</option>
-                                                <option value="151"> MOROCCO</option>
-                                                <option value="152"> MOZAMBIQUE</option>
-                                                <option value="153"> MYANMAR</option>
-                                                <option value="154"> NAMIBIA</option>
-                                                <option value="155"> NAURU</option>
-                                                <option value="156"> NEPAL</option>
-                                                <option value="157"> NETHERLANDS</option>
-                                                <option value="158"> NEW CALEDONIA</option>
-                                                <option value="159"> NEW ZEALAND</option>
-                                                <option value="160"> NICARAGUA</option>
-                                                <option value="161"> NIGER</option>
-                                                <option value="162"> NIGERIA</option>
-                                                <option value="163"> NIUE</option>
-                                                <option value="164"> NORFOLK ISLAND</option>
-                                                <option value="166"> NORWAY</option>
-                                                <option value="167"> OMAN</option>
-                                                <option value="168"> PAKISTAN</option>
-                                                <option value="169"> PALAU</option>
-                                                <option value="171"> PANAMA</option>
-                                                <option value="172"> PAPUA NEW GUINEA</option>
-                                                <option value="173"> PARAGUAY</option>
-                                                <option value="174"> PERU</option>
-                                                <option value="175"> PHILIPPINES</option>
-                                                <option value="177"> POLAND</option>
-                                                <option value="178"> PORTUGAL</option>
-                                                <option value="179"> PUERTO RICO</option>
-                                                <option value="180"> QATAR</option>
-                                                <option value="181"> RÉUNION</option>
-                                                <option value="182"> ROMANIA</option>
-                                                <option value="183"> RUSSIA</option>
-                                                <option value="184"> RWANDA</option>
-                                                <option value="185"> SAINT BARTHÉLEMY</option>
-                                                <option value="186"> SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
-                                                <option value="187"> SAINT KITTS AND NEVIS</option>
-                                                <option value="188"> SAINT LUCIA</option>
-                                                <option value="189"> SAINT MARTIN (FRENCH PART)</option>
-                                                <option value="190"> SAINT PIERRE AND MIQUELON</option>
-                                                <option value="191"> SAINT VINCENT AND THE GRENADINES</option>
-                                                <option value="192"> SAMOA</option>
-                                                <option value="193"> SAN MARINO</option>
-                                                <option value="194"> SAO TOME AND PRINCIPE</option>
-                                                <option value="195"> SAUDI ARABIA</option>
-                                                <option value="196"> SENEGAL</option>
-                                                <option value="197"> SERBIA</option>
-                                                <option value="198"> SEYCHELLES</option>
-                                                <option value="199"> SIERRA LEONE</option>
-                                                <option value="200"> SINGAPORE</option>
-                                                <option value="201"> SINT MAARTEN</option>
-                                                <option value="202"> SLOVAKIA</option>
-                                                <option value="203"> SLOVENIA</option>
-                                                <option value="204"> SOLOMON ISLANDS</option>
-                                                <option value="205"> SOMALIA</option>
-                                                <option value="206"> SOUTH AFRICA</option>
-                                                <option value="207"> SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
-                                                <option value="208"> SPAIN</option>
-                                                <option value="209"> SRI LANKA</option>
-                                                <option value="210"> SUDAN</option>
-                                                <option value="211"> SURINAME</option>
-                                                <option value="212"> SVALBARD AND JAN MAYEN</option>
-                                                <option value="213"> SWAZILAND</option>
-                                                <option value="214"> SWEDEN</option>
-                                                <option value="215"> SWITZERLAND</option>
-                                                <option value="216"> SYRIA</option>
-                                                <option value="217"> TAIWAN</option>
-                                                <option value="218"> TAJIKISTAN</option>
-                                                <option value="219"> TANZANIA</option>
-                                                <option value="220"> THAILAND</option>
-                                                <option value="221"> TIMOR-LESTE</option>
-                                                <option value="222"> TOGO</option>
-                                                <option value="223"> TOKELAU</option>
-                                                <option value="224"> TONGA</option>
-                                                <option value="225"> TRINIDAD AND TOBAGO</option>
-                                                <option value="226"> TUNISIA</option>
-                                                <option value="227"> TURKEY</option>
-                                                <option value="228"> TURKMENISTAN</option>
-                                                <option value="229"> TURKS AND CAICOS ISLANDS</option>
-                                                <option value="230"> TUVALU</option>
-                                                <option value="231"> UGANDA</option>
-                                                <option value="232"> UKRAINE</option>
-                                                <option value="233"> UNITED ARAB EMIRATES</option>
-                                                <option value="234"> UNITED KINGDOM</option>
-                                                <option value="236"> UNITED STATES MINOR OUTLYING ISLANDS</option>
-                                                <option value="235"> UNITED STATES OF AMERICA</option>
-                                                <option value="237"> URUGUAY</option>
-                                                <option value="238"> UZBEKISTAN</option>
-                                                <option value="239"> VANUATU</option>
-                                                <option value="240"> VENEZUELA</option>
-                                                <option value="241"> VIETNAM</option>
-                                                <option value="242"> VIRGIN ISLANDS, BRITISH</option>
-                                                <option value="243"> VIRGIN ISLANDS, U.S.</option>
-                                                <option value="244"> WALLIS AND FUTUNA</option>
-                                                <option value="245"> WESTERN SAHARA</option>
-                                                <option value="246"> YEMEN</option>
-                                                <option value="247"> ZAMBIA</option>
-                                                <option value="248"> ZIMBABWE</option>
-                                                <option value="256">SOUTH SUDAN</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- City of birth -->
-                                        <div class="form-group">
-                                            <label for="cityofbirth1"><span class="field-name">City of birth</span></label>
-                                            <input class="form-control" id="cityofbirth1" name="cityofbirth1" type="text" data-rule-maxWords="10" placeholder="City of birth" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <!-- date of birth -->
-                                        <div class="form-group">
-                                            <label for="startdate" class="required">Date of birth<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-                                            <input class="form-control" type="date" id="startdate" name="startdate" min="1900-01-01" max="2017-06-08" required="required" style="min-width:240px" placeholder="YYYY-MM-DD" />
-                                        </div>
-                                    </div>
+                                    <!-- END ADDRESS BLOCK TO DUPLICATE -->
                                 </div>
-
+                                <hr>
 
                             </form>
-                            <hr>
-
-                            <form action="#" method="get" id="validation-signup-4">
-                                <!-- row 1-->
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>B. Government document</h2>
-
-                                        <!-- salutation select -->
-                                        <div class="form-group">
-                                            <label for="govid1" class="required">
-                                                    <span class="field-name">Salutation</span> 
-                                                </label>
-                                            <select for="govid1" class="form-control" id="govid1" name="govid1" required="required">
-                                                    <option label="Select document type"></option>
-                                                    <option value="1">Driver's license</option>
-                                                    <option value="2">Health card</option>
-                                                    <option value="3">Birth certificate</option>
-                                                    <option value="4">British Columbia ID card</option>
-                                                    <option value="5">Canadian Forces ID card</option>
-                                                    <option value="6">Certificate of Indian status</option>
-                                                    <option value="7">Citizenship card</option>
-                                                    <option value="8">Passport</option>
-                                                    <option value="8">Permanent residence card</option>
-                                                </select>
-                                        </div>
-                                        <!-- document number input -->
-                                        <div class="form-group">
-                                            <label for="govidnum1" class="required"><span class="field-name">Document number</span></label>
-                                            <input class="form-control" id="govidnum1" name="govidnum1" type="text" data-rule-maxWords="4" placeholder="Number" required="required" />
-                                        </div>
-                                        <!-- expiration date -->
-                                        <div class="form-group">
-                                            <label for="expdate1" class="required">Expiration date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month">YYYY-MM-DD</abbr>)</span></label>
-                                            <input class="form-control" type="date" id="expdate1" name="expdate1" min="2017-11-30" max="2040-01-01" required="required" style="min-width:240px" placeholder="YYYY-MM-DD" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h2>C. Employment status</h2>
-                                        <!-- salutation select -->
-                                        <div class="form-group">
-                                            <label for="employ1" class="required">
-                                                    <span class="field-name">Employment status</span> 
-                                                </label>
-                                            <select for="employ1" class="form-control" id="employ1" name="employ1" required="required">
-                                                    <option label="Select employment status"></option>
-                                                    <option value="1">Employed</option>
-                                                    <option value="2">Freelance</option>
-                                                </select>
-                                        </div>
-                                        <!-- document number input -->
-                                        <div class="form-group">
-                                            <label for="govidnum1" class="required"><span class="field-name">Document number</span></label>
-                                            <input class="form-control" id="govidnum1" name="govidnum1" type="text" data-rule-maxWords="4" placeholder="Number" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </form>
-                            <hr>
-
-
                         </div>
                     </div>
                 </div>
@@ -845,8 +567,8 @@
             <!-- wizard buttons -->
 <!--
             <ul class="list-inline text-right">
-                <li><a href="registration-step2.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous step</a></li>
-                <li><a href="registration-step4.html" class="btn btn-primary">Go to step 4 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="registration-step3.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous step</a></li>
+                <li><a href="registration-step5.html" class="btn btn-primary">Review your info <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
             </ul>
 -->
             <!-- fixed action buttons -->
@@ -854,8 +576,8 @@
                 <div class="container">
                     <!-- wizard buttons -->
                     <ul class="list-inline text-right">
-                        <li><a href="registration-step2.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous <span class="hidden-xs">step</span></a></li>
-                        <li><a href="registration-step4.html" class="btn btn-primary">Next step <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                        <li><a href="registration-step3.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous <span class="hidden-xs">step</span></a></li>
+                        <li><a href="registration-step5.html" class="btn btn-primary">Next step <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </section>

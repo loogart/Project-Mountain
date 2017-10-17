@@ -1,3 +1,7 @@
+main {
+    padding-bottom: 69px;
+}
+
 /* card design */
 
 .card {
@@ -315,7 +319,24 @@ screen and (max-width:400px) {
     background-color: #f8f8f8;
 }
 
-ul.requirements li, p.requirements {
+ul.requirements li,
+p.requirements {
     font-size: 13px;
-        margin-top:5px;
+    margin-top: 5px;
+}
+
+/* fixed action buttons */
+
+.fixed-actions {
+    width: 100%;
+    min-height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    background-color: #fff;
+    padding: 15px 15px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2)
 }

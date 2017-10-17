@@ -17,7 +17,7 @@
     <link href="./GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="./GCWeb/css/theme.css">
     <link rel="stylesheet" href="./custom/style.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
@@ -141,43 +141,51 @@
             </div>
         </nav>
     </header>
+    
+    <!-- main content designed by Chris -->
     <div class="container">
-        <div class="row">
-            <main property="mainContentOfPage" class="col-sm-12" role="main">
+        <main property="mainContentOfPage" role="main">
+            <!-- progress bar and section title-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="progress-bar-holder">
+                        <ul class="progress-indicator">
+                            <li class="active">
+                                <span class="bubble"></span>
+                                <a href="#!">1. Organization</a>
+                            </li>
+                            <li>
+                                <span class="bubble"></span> 2. Badge.
+                            </li>
+                            <li>
+                                <span class="bubble"></span> 3. Personal
+                            </li>
+                            <li>
+                                <span class="bubble"></span> 4. Contact
+                            </li>
+                            <li>
+                                <span class="bubble"></span> 5. Review
+                            </li>
+                        </ul>
+                    </section>
+                    <h1>1. Your organization</h1>
+                    <p>Please complete the following required information about the organization you are a part of. All fields are required prior to moving onto the next section.</p>
+                </div>
+            </div>
+            <!-- registration meat and potatoes -->
+            <section class="registration">
+                <!-- organization information -->
                 <div class="row">
-                    <!-- progress bar and section title-->
-                    <div class="col-sm-12">
-                        <section class="progress-bar-holder">
-                            <ul class="progress-indicator">
-                                <li class="active">
-                                    <span class="bubble"></span>
-                                    <a href="#!">1. Organization</a>
-                                </li>
-                                <li>
-                                    <span class="bubble"></span> 2. Badge.
-                                </li>
-                                <li>
-                                    <span class="bubble"></span> 3. Personal
-                                </li>
-                                <li>
-                                    <span class="bubble"></span> 4. Review
-                                </li>
-                            </ul>
-                        </section>
-                        <h1>1. Your organization</h1>
-                        <p>Please complete the following required information about the organization you are a part of. All fields are required prior to moving onto the next section.</p>
-                    </div>
-                    <section class="registration">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="wb-frmvld">
-                                <h2>A. Organization</h2>
-                                <form action="#" method="get" id="validation-signup-2">
-                                    <!-- organization select -->
-                                    <div class="form-group">
-                                        <!-- /input-group -->
-                                        <label for="city" class="required">Your organization</label>
-                                        <input class="form-control" type="text" id="city" name="city" list="suggestions" placeholder="Your organization" required="required" />
-                                        <datalist id="suggestions">
+                    <div class="col-sm-6">
+                        <div class="wb-frmvld">
+                            <h2>A. Organization</h2>
+                            <form action="#" method="get" id="validation-signup-2">
+                                <!-- organization select -->
+                                <div class="form-group">
+                                    <!-- /input-group -->
+                                    <label for="city" class="required">Your organization</label>
+                                    <input class="form-control" type="text" id="city" name="city" list="suggestions" placeholder="Your organization" required="required" />
+                                    <datalist id="suggestions">
                                             <!--[if lte IE 9]><select><![endif]-->
                                             <option label="CBC" value="CBC"></option>
                                             <option label="CTV" value="CTV"></option>
@@ -205,13 +213,13 @@
                                             <option label="Griffindor" value="Griffindor"></option>
                                             <!--[if lte IE 9]></select><![endif]-->
                                         </datalist>
-                                    </div>
-                                    <!-- country select -->
-                                    <div class="form-group">
-                                        <label for="title1" class="required">
+                                </div>
+                                <!-- country select -->
+                                <div class="form-group">
+                                    <label for="title1" class="required">
                                                 <span class="field-name">Organization Country</span> 
                                             </label>
-                                        <select class="form-control" id="country1" name="country1" required="required">
+                                    <select class="form-control" id="country1" name="country1" required="required">
                                             <option label="Select a country" value="0"></option>
                                             <option value="1"> AFGHANISTAN</option>
                                             <option value="2"> ÅLAND ISLANDS</option>
@@ -453,13 +461,13 @@
                                             <option value="248"> ZIMBABWE</option>
                                             <option value="256">SOUTH SUDAN</option>
                                         </select>
-                                    </div>
-                                    <!-- profession select -->
-                                    <div class="form-group">
-                                        <label for="title1" class="required">
+                                </div>
+                                <!-- profession select -->
+                                <div class="form-group">
+                                    <label for="title1" class="required">
                                             <span class="field-name">Your profession</span> 
                                         </label>
-                                        <select class="form-control" id="profession1" name="profession1" required="required">
+                                    <select class="form-control" id="profession1" name="profession1" required="required">
                                             <option label="Select a profession"></option>
                                             <option value="cameraman">Cameraman</option>
                                             <option value="journalist">Journalist</option>
@@ -467,64 +475,70 @@
                                             <option value="technician">Technician</option>
                                             <option value="other">Other</option>
                                         </select>
-                                    </div>
-                                    <!-- other profession -->
-                                    <div class="form-group">
-                                        <label for="word1"><span class="field-name">If other, please specify</span></label>
-                                        <input class="form-control" id="other1" name="other1" type="text" data-rule-maxWords="5" />
-                                    </div>
-                                </form>
-                                <hr>
-                            </div>
+                                </div>
+                                <!-- other profession -->
+                                <div class="form-group">
+                                    <label for="word1"><span class="field-name">If other profession selected, please specify</span></label>
+                                    <input class="form-control" id="other1" name="other1" type="text" data-rule-maxWords="5" placeholder="Specify other profession" />
+                                </div>
+                            </form>
+                            <hr>
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="wb-frmvld">
-                                <h2>B. Letter of assignment</h2>
-                                <form action="#" method="get" id="validation-signup-2">
-                                    <!-- upload letter -->
-                                    <div class="form-group">
-                                        <label for="file1" class="required"><span class="field-name">Upload letter of assignment</span> <strong class="required">(required)</strong></label>
-                                        <input id="file1" name="file1" type="file" required="required" />
-                                    </div>
-                                    <ul class="requirements">
-                                        <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
-                                        <li>The letter must name the applicant and his/her role within the organization</li>
-                                        <li>The letter must indicate that the applicant's assignment covers the 2017 Royal Tour</li>
-                                        <li>The letter must be written on official letterhead and be signed by an authorized individual and include that person's contact details</li>
-                                    </ul>
-                                </form>
-                                <hr>
-                            </div>
+                    </div>
+                    <!-- Upload letter of assignment -->
+                    <div class="col-sm-6">
+                        <div class="wb-frmvld">
+                            <h2>B. Letter of assignment</h2>
+                            <form action="#" method="get" id="validation-signup-2">
+                                <!-- upload letter and credentials-->
+                                <div class="form-group">
+                                    <label for="file1" class="required"><span class="field-name">Upload letter of assignment</span> <strong class="required">(required)</strong></label>
+                                    <input id="file1" name="file1" type="file" required="required" />
+                                </div>
+                                <ul class="requirements">
+                                    <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                                    <li>The letter must name the applicant and his/her role within the organization</li>
+                                    <li>The letter must indicate that the applicant's assignment covers the 2017 Royal Tour</li>
+                                    <li>The letter must be written on official letterhead and be signed by an authorized individual and include that person's contact details</li>
+                                </ul>
+                            </form>
+                            <h2>C. Media credentials</h2>
+                            <form action="#" method="get" id="validation-signup-2">
+                                <!-- upload credentials -->
+                                <div class="form-group">
+                                    <label for="file1" class="required"><span class="field-name">Upload media credentials</span> <strong class="required">(required)</strong></label>
+                                    <input id="file1" name="file1" type="file" required="required" />
+                                </div>
+                                <ul class="requirements">
+                                    <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
+                                    <li>The media credential must be issued by a recognized professional body</li>
+                                    <li>A valid passport may be provided in lieu of a media credential</li>
+                                </ul>
+                            </form>
+                            <hr>
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="wb-frmvld">
-                                <h2>C. Media credentials</h2>
-                                <form action="#" method="get" id="validation-signup-2">
-                                    <!-- upload credentials -->
-                                    <div class="form-group">
-                                        <label for="file1" class="required"><span class="field-name">Upload media credentials</span> <strong class="required">(required)</strong></label>
-                                        <input id="file1" name="file1" type="file" required="required" />
-                                    </div>
-                                    <ul class="requirements">
-                                        <li>Only the following formats are accepted .pdf, .jpg, jpeg or gif</li>
-                                        <li>The media credential must be issued by a recognized professional body</li>
-                                        <li>A valid passport may be provided in lieu of a media credential</li>
-                                    </ul>
-                                </form>
-                                <hr>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
-                <ul class="list-inline text-right">
-<!--                    <li><a href="" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous step</a></li>-->
-                    <li><a href="registration-step2.html" class="btn btn-primary">Go to step 2 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                </ul>
-            </main>
-        </div>
+            </section>
+            <!-- wizard buttons -->
+<!--
+            <ul class="list-inline text-right">
+                <li><a href="registration-step2.html" class="btn btn-primary">Go to step 2 <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+            </ul>
+-->
+            <!-- fixed action buttons -->
+            <section class="fixed-actions">
+                <div class="container">
+                    <!-- wizard buttons -->
+                    <ul class="list-inline text-right">
+                        <li><a href="registration-step2.html" class="btn btn-primary">Next step <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
     
-    <footer role="contentinfo" id="wb-info">
+    <!--<footer role="contentinfo" id="wb-info">
         <nav role="navigation" class="container wb-navcurr">
             <h2 class="wb-inv">About government</h2>
             <ul class="list-unstyled colcount-sm-2 colcount-md-3">
@@ -561,7 +575,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>-->
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="./wet-boew/js/wet-boew.min.js"></script>
