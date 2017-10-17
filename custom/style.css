@@ -140,7 +140,7 @@ section.progress-bar-holder {
 }
 
 .progress-indicator > li:hover {
-    color: #6f6f6f
+/*    color: #6f6f6f*/
 }
 
 .progress-indicator > li.completed,
@@ -334,9 +334,14 @@ p.requirements {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 5000;
+    z-index: 1000;
     background-color: #fff;
     padding: 15px 15px 0;
     border-top: 1px solid #eee;
-    box-shadow: 0 2px 10px rgba(0,0,0,.2)
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2)
+}
+
+/* cropper js css custom */
+.preview{
+    overflow:hidden;
 }
