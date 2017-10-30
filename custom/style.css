@@ -72,13 +72,14 @@ main {
 
 .panel-register .form-control,
 .modal-body .form-control,
-.registration .form-control {
+.registration .form-control,
+.wb-frmvld .form-control{
     width: 100%
 }
 
-.panel-register p.terms,
-.panel-register a.sign-in {
-    font-size: 1.6rem;
+p.terms,
+a.sign-in {
+    font-size: 1.3rem;
 }
 
 .panel-register a.btn {

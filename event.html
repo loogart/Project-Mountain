@@ -144,6 +144,7 @@
                 <h1 property="name" id="wb-cont">G7 Summit Event</h1>
                 <p style="margin:20px auto">The 2018 Group of 7 (G7) will be held in Charlevoix, Québec. We are pleased to welcome you to this event and we will facilitate your registration and accreditation process. </p>
                 <img class="img-responsive" src="./custom/images/card1.jpg">
+                <!--
                 <div class="panel panel-default panel-register hidden-xs">
                     <div class="panel-body">
                         <h2 style="margin-top:0;">Delegation accreditation officers</h2>
@@ -151,78 +152,117 @@
                         <p><a type="submit" class="btn btn-primary btn-block" href="register-dao.html" role="button">DAO Sign in</a></p>
                     </div>
                 </div>
+-->
             </div>
             <div class="col-sm-6">
-                <div class="panel panel-default panel-register">
-                    <div class="panel-body">
-                        <h2 style="margin-top:0;">Register</h2>
-                        <p>Sign up to get accredited by the Canadian Summits Office and to create your event badge. Before you register, prepare all <a href="before-you-register.html" target="_blank">required documentation</a>.</p>
-                        <div class="wb-frmvld">
-                            <form action="#" method="get" id="validation-signup">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="required">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required="required">
-                                </div>
+                <div class="wb-tabs" style="margin-top:30px;">
+                    <div class="tabpanels">
+                        <details id="register" open="open">
+                            <summary>Register</summary>
+                            <!-- registration panel -->
+                            <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="password1" class="required"><span class="field-name">Create a password</span></label>
-                                            <input class="form-control" id="password1" name="password1" type="password" maxlength="10" size="10" pattern=".{5,10}" data-rule-rangelength="[5,10]" placeholder="Create a password" required="required" />
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="passwordconfirm" class="required"><span class="field-name">Re-type your password</span></label>
-                                            <input class="form-control" id="passwordconfirm" name="passwordconfirm" type="password" maxlength="10" size="10" data-rule-equalTo="#password1" placeholder="Re-type password" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="title1" class="required">
+                                    <div class="col-sm-12">
+                                        <h2>Register</h2>
+                                        <p>Sign up to get accredited by the Canadian Summits Office and to create your event badge. Before you register, prepare all <a href="before-you-register.html" target="_blank">required documentation</a>.</p>
+                                        <div class="wb-frmvld">
+                                            <form action="#" method="get" id="validation-signup">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" class="required">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required="required">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="password1" class="required"><span class="field-name">Create a password</span></label>
+                                                            <input class="form-control" id="password1" name="password1" type="password" maxlength="10" size="10" pattern=".{5,10}" data-rule-rangelength="[5,10]" placeholder="Create a password" required="required" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="passwordconfirm" class="required"><span class="field-name">Re-type your password</span></label>
+                                                            <input class="form-control" id="passwordconfirm" name="passwordconfirm" type="password" maxlength="10" size="10" data-rule-equalTo="#password1" placeholder="Re-type password" required="required" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="title1" class="required">
                                                 <span class="field-name">Select your role</span> 
                                             </label>
-                                            <select class="form-control" id="title1" name="title1" required="required">
+                                                            <select class="form-control" id="title1" name="title1" required="required">
                                                 <option label="Select a role"></option>
                                                 <option value="media">Media</option>
                                                 <option value="supplier">Supplier</option>
                                                 <option value="secretariat">Secretariat</option>
                                                 <option value="guests">Official guests</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="code1"><span class="field-name"></span>Unique code</label>
-                                            <input class="form-control" id="code1" name="word1" type="text" size="5" maxlength="5" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="" />
-                                        </div>
-                                    </div>
-                                </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="code1"><span class="field-name"></span>Unique code</label>
+                                                            <input class="form-control" id="code1" name="word1" type="text" size="5" maxlength="5" pattern="[A-Za-z\s]" data-rule-lettersonly="true" placeholder="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                <div class="form-group">
-                                    <label for="title1" class="required">
+                                                <div class="form-group">
+                                                    <label for="title1" class="required">
                                         <span class="field-name">Select a security question</span> 
                                     </label>
-                                    <select class="form-control" id="title1" name="title1" required="required">
+                                                    <select class="form-control" id="title1" name="title1" required="required">
                                         <option label="Select a question"></option>
                                         <option value="media">Can you handle the truth?</option>
                                         <option value="delegate">What colour is the sky?</option>
                                         <option value="mr">What was the colour of your first job?</option>
                                         <option value="ms">Who is your favourite Summits Management colleague?</option>
                                     </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="word1" class="required"><span class="field-name">The answer to your security question</span></label>
+                                                    <input class="form-control" id="word1" name="word1" type="text" data-rule-maxWords="5" required="required" />
+                                                </div>
+                                                <p class="terms">By clicking <i>Create your account</i>, you agree to our terms and that you have read our <a href="http://www.international.gc.ca/gac-amc/publications/notices-avis.aspx?lang=eng" target="_blank">Privacy Policy</a>.</p>
+                                                <p><a type="submit" class="btn btn-success btn-lg btn-block" href="pre-register.html" role="button">Create your account</a></p>
+                                                <!--                                                <p><a class="sign-in wb-lbx lbx-modal" href="#centred-popup" aria-controls="centred-popup" role="button">Already signed up for this event? Sign in.</a></p>-->
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="word1" class="required"><span class="field-name">The answer to your security question</span></label>
-                                    <input class="form-control" id="word1" name="word1" type="text" data-rule-maxWords="5" required="required" />
+                            </div>
+                            <!-- registration panel end -->
+                        </details>
+                        <details id="details-panel1">
+                            <summary>Login</summary>
+                            <!-- organization information -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Log in to your account</h2>
+                                        <p>If you are a DAO (Delegation Accreditation Officer) or if you have already registered for this event, please log in here.</p>
+                                        <div class="wb-frmvld">
+                                            <form action="#" method="get" id="validation-signup">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+                                            <p><a type="submit" class="btn btn-primary btn-block" href="registration.html">Sign in</a></p>
+                                        </form>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="terms">By clicking <i>Create your account</i>, you agree to our terms and that you have read our <a href="http://www.international.gc.ca/gac-amc/publications/notices-avis.aspx?lang=eng" target="_blank">Privacy Policy</a>.</p>
-                                <p><a type="submit" class="btn btn-success btn-lg btn-block" href="pre-register.html" role="button">Create your account</a></p>
-                                <p><a class="sign-in wb-lbx lbx-modal" href="#centred-popup" aria-controls="centred-popup" role="button">Already signed up for this event? Sign in.</a></p>
-                            </form>
-                        </div>
+                            </div>
+                            <!-- end content -->
+                        </details>
                     </div>
                 </div>
+
             </div>
 
         </div>
