@@ -98,9 +98,11 @@ main {
 
 .modal-body .form-control,
 .registration .form-control,
-.wb-frmvld .form-control {
+.wb-frmvld .form-control,
+.twitter-typeahead {
     width: 100%
 }
+
 
 p.terms,
 a.sign-in {
@@ -483,4 +485,60 @@ nav.navigation-bar.light .navigation-bar-item a {
         -ms-flex-pack: end;
         justify-content: flex-end;
     }
+}
+
+/* type ahead css */
+.tt-query, /* UPDATE: newer versions use tt-input instead of tt-query */
+.tt-hint {
+    width: 100%;
+    height: 30px;
+    padding: 8px 11px 2px;
+    font-size: 1.6rem;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.tt-query { /* UPDATE: newer versions use tt-input instead of tt-query */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 100%;
+    margin-top: 6px;
+    padding: 6px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 1px dotted #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tt-suggestion.tt-selectable:hover{
+        color: #fff;
+    background-color: #335075;
+}
+
+.tt-suggestion:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.tt-suggestion p {
+    margin: 0;
 }

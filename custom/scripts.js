@@ -11,10 +11,12 @@ $(document).ready(function () {
         blocks: [3, 3, 3, 4],
         delimiters: [' (', ') ', '-'],
     });
+
 });
 
 
-// cropper js 
+// cropper js
+
 function each(arr, callback) {
     var length = arr.length;
     var i;

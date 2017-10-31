@@ -138,13 +138,12 @@
                                     <div class="col-sm-6">
                                         <h2>A. Organization</h2>
                                         <!-- organization select -->
-                                        <div class="form-group">
-                                            <!-- /input-group -->
+                                        <!--<div class="form-group">
                                             <label for="city" class="required">Your organization</label>
                                             <input class="form-control" type="text" id="city" name="city" list="suggestions" placeholder="Your organization" required="required" />
-                                            <datalist id="suggestions">
+                                            <datalist id="suggestions">-->
                                             <!--[if lte IE 9]><select><![endif]-->
-                                            <option label="CBC" value="CBC"></option>
+                                            <!--<option label="CBC" value="CBC"></option>
                                             <option label="CTV" value="CTV"></option>
                                             <option label="NBC" value="NBC"></option>
                                             <option label="Radio-Canada" value="Radio-Canada"></option>
@@ -167,10 +166,20 @@
                                             <option label="House Lannister" value="House Lannister"></option>
                                             <option label="House Targaryen" value="House Targaryen"></option>
                                             <option label="House Stark" value="House Stark"></option>
-                                            <option label="Griffindor" value="Griffindor"></option>
+                                            <option label="Griffindor" value="Griffindor"></option>-->
                                             <!--[if lte IE 9]></select><![endif]-->
-                                        </datalist>
+                                        <!--</datalist>
+                                        </div>-->
+
+                                        <!-- type ahead test-->
+
+                                        <div class="form-group">
+                                            <label for="city" class="required">Your organization</label>
+                                            <div id="the-basics">
+                                                <input class="form-control typeahead" type="text" id="city" name="city" placeholder="Your organization" required="required" style="width:100%">
+                                            </div>
                                         </div>
+
                                         <!-- country select -->
                                         <div class="form-group">
                                             <label for="title1" class="required">
@@ -541,7 +550,9 @@
 		
 		<![endif]-->
     <script src="./GCWeb/js/theme.min.js"></script>
+    <script src="./custom/js/typeahead.js"></script>
     <script src="./scripts.js"></script>
+
 </body>
 
 </html>
