@@ -54,7 +54,6 @@ $(document).ready(function () {
         $('.input-phone-alt').focus();
     });
     
-
 });
 
 // cropper js
