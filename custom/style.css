@@ -372,11 +372,35 @@ p.requirements {
     overflow: hidden;
 }
 
-.badge-photo-overlay{
-    position:absolute;
+/*
+.badge-photo-overlay {
+    position: absolute;
     opacity: .69;
-    padding:20px 0 0;
+    padding: 20px 0 0;
 }
+*/
+
+.cropper-wrap-box,
+.cropper-canvas {
+    z-index: 0;
+    position: absolute;
+}
+
+
+.cropper-face {
+    border: 0 dashed #eee;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    background-size: cover;
+    background-image: url('../custom/images/head-outline.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+
+
 
 /* navigation */
 
