@@ -137,7 +137,7 @@ var DEFAULTS = {
   zoomOnTouch: true,
 
   // Enable to zoom the image by wheeling mouse
-  zoomOnWheel: true,
+  zoomOnWheel: false,
 
   // Define zoom ratio when zoom the image by wheeling mouse
   wheelZoomRatio: 0.1,
