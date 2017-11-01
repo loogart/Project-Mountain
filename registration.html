@@ -14,23 +14,23 @@
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
     <!-- Meta data-->
     <!--[if gte IE 9 | !IE ]><!-->
-    <link href="./GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="./GCWeb/css/theme.css">
+    <link href="./wet/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="./wet/GCWeb/css/theme.css">
     <link rel="stylesheet" href="./custom/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--<![endif]-->
     <!--[if lt IE 9]>
-		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
+		<link href="./wet/GCWeb/assets/favicon.ico" rel="shortcut icon" />
 		
-		<link rel="stylesheet" href="./GCWeb/css/ie8-theme.min.css" />
+		<link rel="stylesheet" href="./wet/GCWeb/css/ie8-theme.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
+		<script src="./wet/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
     <!--[if lte IE 9]>
 		
 		
 		<![endif]-->
-    <noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="./wet/wet-boew/css/noscript.min.css" /></noscript>
     <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
     <script>
         dataLayer1 = [];
@@ -70,8 +70,14 @@
             <a class="wb-sl" href="#wb-sec">Skip to section menu</a>
         </li>
     </ul>
-    <!-- registration header -->
+    <!-- header section -->
     <header role="banner">
+        <!-- 
+            Top bar navigation
+            ------------------
+            1. Includes language toggle (FR/EN)
+            2. Sign in button appears when user is inside registration app
+        -->
         <nav class="navigation-bar">
             <div class="container">
                 <div class="navigation-bar-item">
@@ -83,6 +89,23 @@
                 </div>
             </div>
         </nav>
+        
+        <!-- 
+           Branding section
+           ----------------
+            1. Ability for the user to provide a background color in HEX or rgba
+            2. Ability for user to provide a branding image of 320px wide x 69px tall
+            3. If no branding provided, this section will stay hidden
+        -->
+        <!-- brand COLOR can be updated right below -->
+        <section class="navigation-bar__branding" style="background-color:rgba(2,104,180,1)">
+            <div class="container-fluid text-center">
+                <!-- brand LOGO can be updated below -->
+                <img class="branding-nav" src="custom/images/850x185_EN.JPG"> 
+            </div>
+        </section>
+        
+        <!-- Breadcrumbs -->
         <nav role="navigation" id="wb-bc" property="breadcrumb">
             <h2>You are here:</h2>
             <div class="container">
@@ -97,7 +120,7 @@
         </nav>
     </header>
 
-    <!-- main content designed by Chris -->
+    <!-- Main content starts here -->
     <div class="container">
         <main property="mainContentOfPage" role="main">
             <!-- progress bar and section title-->
@@ -502,54 +525,20 @@
             </section>
         </main>
     </div>
+    
+    <!-- Footer
+    1. Hidden when user is inside the app (signed in)
+    -->
 
-    <!--<footer role="contentinfo" id="wb-info">
-        <nav role="navigation" class="container wb-navcurr">
-            <h2 class="wb-inv">About government</h2>
-            <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-                <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-                <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-                <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-                <li><a href="https://www.canada.ca/en/news.html">News</a></li>
-                <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-                <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-                <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
-                <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-                <li><a href="http://open.canada.ca/en/">Open government</a></li>
-            </ul>
-        </nav>
-        <div class="brand">
-            <div class="container">
-                <div class="row">
-                    <nav class="col-md-10 ftr-urlt-lnk">
-                        <h2 class="wb-inv">About this site</h2>
-                        <ul>
-                            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-                        </ul>
-                    </nav>
-                    <div class="col-xs-6 visible-sm visible-xs tofpg">
-                        <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-                    </div>
-                    <div class="col-xs-6 col-md-2 text-right">
-                        <object type="image/svg+xml" tabindex="-1" role="img" data="./GCWeb/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>-->
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="./wet-boew/js/wet-boew.min.js"></script>
+    <script src="./wet/wet-boew/js/wet-boew.min.js"></script>
     <!--<![endif]-->
     <!--[if lt IE 9]>
-		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
+		<script src="./wet/wet-boew/js/ie8-wet-boew2.min.js"></script>
 		
 		<![endif]-->
-    <script src="./GCWeb/js/theme.min.js"></script>
+    <script src="./wet/GCWeb/js/theme.min.js"></script>
     <script src="./custom/js/typeahead.js"></script>
     <script src="./custom/js/scripts.js"></script>
 

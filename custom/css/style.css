@@ -465,6 +465,17 @@ nav.navigation-bar.light .navigation-bar-item a {
     color: #222;
 }
 
+/* branding in app */
+
+.branding-nav {
+    height: 69px;
+    width: 320px;
+}
+
+.navigation-bar__branding {
+    background-color: #f5f5f5;
+}
+
 @media (max-width:767px) {
     nav.navigation-bar .container,
     nav.navigation-bar .container-fluid {
@@ -485,10 +496,16 @@ nav.navigation-bar.light .navigation-bar-item a {
         -ms-flex-pack: end;
         justify-content: flex-end;
     }
+    .branding-nav {
+        max-height: 69px;
+        width: 100%;
+    }
 }
 
 /* type ahead css */
-.tt-query, /* UPDATE: newer versions use tt-input instead of tt-query */
+
+.tt-query,
+
 .tt-hint {
     width: 100%;
     height: 30px;
@@ -500,7 +517,7 @@ nav.navigation-bar.light .navigation-bar-item a {
     outline: none;
 }
 
-.tt-query { /* UPDATE: newer versions use tt-input instead of tt-query */
+.tt-query {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -509,7 +526,7 @@ nav.navigation-bar.light .navigation-bar-item a {
     color: #999;
 }
 
-.tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+.tt-menu {
     width: 100%;
     margin-top: 6px;
     padding: 6px 0;
@@ -517,8 +534,8 @@ nav.navigation-bar.light .navigation-bar-item a {
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
 .tt-suggestion {
@@ -530,8 +547,8 @@ nav.navigation-bar.light .navigation-bar-item a {
     padding-bottom: 10px;
 }
 
-.tt-suggestion.tt-selectable:hover{
-        color: #fff;
+.tt-suggestion.tt-selectable:hover {
+    color: #fff;
     background-color: #335075;
 }
 
