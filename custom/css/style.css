@@ -467,13 +467,13 @@ nav.navigation-bar.light .navigation-bar-item a {
 
 /* branding in app */
 
-.branding-nav {
-    height: 69px;
-    width: 320px;
-}
-
 .navigation-bar__branding {
     background-color: #f5f5f5;
+}
+
+.branding-nav {
+    height: 69px;
+    width: auto;
 }
 
 @media (max-width:767px) {
@@ -497,8 +497,8 @@ nav.navigation-bar.light .navigation-bar-item a {
         justify-content: flex-end;
     }
     .branding-nav {
-        max-height: 69px;
-        width: 100%;
+        height:auto;
+        width:100%;
     }
 }
 
