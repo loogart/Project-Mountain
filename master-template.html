@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--> <!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Master Template Empty</title>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- Meta data -->
     <meta name="description" content="Summits Management Office accreditation app built with love the Global Affairs Canada team and designed with care by Chris Soueidan.">
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="./custom/css/cropper.css">
     <link rel="stylesheet" href="./custom/css/style.css">
     <link rel="stylesheet" href="./custom/css/style.css">
+    <link rel="stylesheet" href="./custom/css/menu.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--<![endif]-->
     <!--[if lt IE 9]>
@@ -82,8 +82,7 @@
                     <img src="custom/images/fip-en.svg" class="navigation-bar-brand">
                 </div>
                 <div class="navigation-bar-item">
-                    <a href="event.html">Log out</a>
-                    <a href="#!">Français</a>
+                    <a href="<%response.Write(langChangeLink)%>"><%Response.Write(lblChangeLangText)%></a>
                 </div>
             </div>
         </nav>
@@ -92,7 +91,7 @@
            Branding section
            ----------------
             1. Ability for the user to provide a background color in HEX or rgba
-            2. Ability for user to provide a branding image of 420px wide x 69px tall
+            2. Ability for user to provide a branding image of 320px wide x 69px tall
             3. If no branding provided, this section will stay hidden
         -->
         <!-- brand COLOR can be updated right below -->
@@ -109,9 +108,7 @@
             <div class="container">
                 <div class="row">
                     <ol class="breadcrumb">
-                        <li><a href="select-event.html">Home</a></li>
-                        <li>G7 Summit</li>
-                        <li>Registration</li>
+                        <asp:Literal ID="litBreadcrumbsMasterpage" runat="server" Visible="true"></asp:Literal>
                     </ol>
                 </div>
             </div>
@@ -120,7 +117,18 @@
 
     <!-- Main content starts here -->
     <main role="main" property="mainContentOfPage" class="container">
-        <!-- :) -->
+        <div>
+            <form id="form1" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server">
+                </asp:ScriptManager>
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!-- begin page content -->
+                        <!-- end   page content -->
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </div>
     </main>
     <!-- Main content ends here -->
 
@@ -132,6 +140,7 @@
         <nav role="navigation" class="container wb-navcurr">
             <h2 class="wb-inv">About government</h2>
             <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                <%-- Will need literals for the links below --%>
                 <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
                 <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
                 <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
@@ -149,6 +158,7 @@
                     <nav class="col-md-10 ftr-urlt-lnk">
                         <h2 class="wb-inv">About this site</h2>
                         <ul>
+                             <%-- Will need literals for the links below --%>
                             <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
                             <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
                             <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
