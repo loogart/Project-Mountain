@@ -100,12 +100,12 @@
             3. If no branding provided, this section will stay hidden
         -->
         <!-- brand COLOR can be updated right below -->
-        <section class="navigation-bar__branding" style="background-color:#0268b4">
+       <!--<section class="navigation-bar__branding" style="background-color:#0268b4">
             <div class="container-fluid text-center">
-                <!-- brand LOGO can be updated below -->
+                 brand LOGO can be updated below 
                 <img class="branding-nav" src="custom/images/850x185_EN.JPG">
             </div>
-        </section>
+        </section>-->
 
         <!-- Breadcrumbs -->
         <nav role="navigation" id="wb-bc" property="breadcrumb">
@@ -120,55 +120,114 @@
         </nav>
     </header>
 
-    <!-- MENU ITEM tab -->
-    <nav role="nav" class="container">
-        <div class="wb-tabs">
-            <div class="tabpanels">
-                <!-- 1 section -->
-                <details id="details-panel1" open="open">
-                    <summary>Section 1</summary>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="nav nav-pills nav-justified">
-                                    <li class="active"><a href="#">Link 1</a></li>
-                                    <li><a href="#">Link 2</a></li>
-                                    <li><a href="#">Link 3</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </details>
-                <!-- 1 section -->
-                <details id="details-panel2" open="open">
-                    <summary>Section 2</summary>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="nav nav-pills nav-justified">
-                                    <li class="active"><a href="#">Link 4</a></li>
-                                    <li><a href="#">Link 5</a></li>
-                                    <li><a href="#">Link 6</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </details>
-                <!-- 1 section -->
-                <details id="details-panel3" open="open">
-                    <summary>Section 3</summary>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="nav nav-pills nav-justified">
-                                    <li class="active"><a href="#">Link 7</a></li>
-                                    <li><a href="#">Link 8</a></li>
-                                    <li><a href="#">LInk 9</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </details>
+    <style>
+        .main-dropdowns {
+            display: flex;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            background-color: #335075;
+            color: #fff;
+            padding: 12px 15px;
+            flex: 1;
+            border-right:1px dotted #4b76ad;
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin-top:12px;
+            background-color: #f9f9f9;
+            color: #222;
+            left: 0;
+            right: 0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content ul {
+            padding-bottom: 0;
+
+        }
+
+        .dropdown-content li a:hover {
+            background-color: #eee;
+        }
+
+        .dropdown-content li a {
+            padding: 16px 15px;
+            border-bottom: 1px dotted #ccc;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            z-index: 69;
+        }
+
+    </style>
+    
+    <!-- new navigation -->
+    <nav role="navigation" class="main-dropdowns">
+
+        <div class="dropdown">
+            <span class="dropdown-tag">Nav 1</span>
+            <div class="dropdown-content">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown-tag">Nav 2</span>
+            <div class="dropdown-content">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                </ul>
+            </div>
+        </div>
+                <div class="dropdown">
+            <span class="dropdown-tag">Nav 3</span>
+            <div class="dropdown-content">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                </ul>
+            </div>
+        </div>
+                <div class="dropdown">
+            <span class="dropdown-tag">Nav 4</span>
+            <div class="dropdown-content">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                </ul>
+            </div>
+        </div>
+                        <div class="dropdown">
+            <span class="dropdown-tag">Nav 5</span>
+            <div class="dropdown-content">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                    <li><a href="#!">Item 1</a></li>
+                </ul>
             </div>
         </div>
     </nav>
