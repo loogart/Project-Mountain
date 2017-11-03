@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--> <!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -82,7 +85,9 @@
                     <img src="custom/images/fip-en.svg" class="navigation-bar-brand">
                 </div>
                 <div class="navigation-bar-item">
-                    <a href="<%response.Write(langChangeLink)%>"><%Response.Write(lblChangeLangText)%></a>
+                    <a href="<%response.Write(langChangeLink)%>">
+                        <%Response.Write(lblChangeLangText)%>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -98,7 +103,7 @@
         <section class="navigation-bar__branding" style="background-color:#0268b4">
             <div class="container-fluid text-center">
                 <!-- brand LOGO can be updated below -->
-                <img class="branding-nav" src="custom/images/850x185_EN.JPG"> 
+                <img class="branding-nav" src="custom/images/850x185_EN.JPG">
             </div>
         </section>
 
@@ -124,6 +129,33 @@
                 <div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         <!-- begin page content -->
+                        
+                        <!-- MENU ITEM tab -->
+                        <div class="wb-tabs">
+                            <div class="tabpanels">
+                                <!-- 1 section -->
+                                <details id="details-panel1" open="open" style="padding-top:30px">
+                                    <summary>Section 1</summary>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item active">Link 1</a>
+                                                    <a href="#" class="list-group-item">Link 2</a>
+                                                    <a href="#" class="list-group-item">Link 3</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h1 style="margin-top:0">Section 1</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam perferendis eum, ab porro ad ex perspiciatis inventore, ipsum voluptatibus dolores in placeat enim odit itaque magni iusto quisquam? Amet, cumque.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+
                         <!-- end   page content -->
                     </asp:ContentPlaceHolder>
                 </div>
@@ -141,15 +173,15 @@
             <h2 class="wb-inv">About government</h2>
             <ul class="list-unstyled colcount-sm-2 colcount-md-3">
                 <%-- Will need literals for the links below --%>
-                <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-                <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-                <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-                <li><a href="https://www.canada.ca/en/news.html">News</a></li>
-                <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-                <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-                <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
-                <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-                <li><a href="http://open.canada.ca/en/">Open government</a></li>
+                    <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+                    <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+                    <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+                    <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+                    <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+                    <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+                    <li><a href="http://open.canada.ca/en/">Open government</a></li>
             </ul>
         </nav>
         <div class="brand">
@@ -158,12 +190,12 @@
                     <nav class="col-md-10 ftr-urlt-lnk">
                         <h2 class="wb-inv">About this site</h2>
                         <ul>
-                             <%-- Will need literals for the links below --%>
-                            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                            <%-- Will need literals for the links below --%>
+                                <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                                <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                                <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+                                <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                                <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
                         </ul>
                     </nav>
                     <div class="col-xs-6 visible-sm visible-xs tofpg">
@@ -176,7 +208,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- All Javascript dependencies below -->
 
     <!--[if gte IE 9 | !IE ]><!-->
