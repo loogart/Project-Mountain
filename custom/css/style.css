@@ -639,3 +639,9 @@ nav.navigation-bar.light .navigation-bar-item a {
         border-right: 0;
     }
 }
+
+/* .NET helpers */
+
+.label {
+    white-space: normal;
+}
