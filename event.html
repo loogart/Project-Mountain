@@ -71,8 +71,8 @@
     <header role="banner">
         <nav class="navigation-bar">
             <div class="container">
-                <div class="navigation-bar-item">
-                    <img src="custom/images/fip-en.svg" class="navigation-bar-brand">
+                <div class="navigation-bar-item" aria-labelledby="Nav1">
+                    <a href="index.html"><img src="custom/images/fip-en.svg" class="navigation-bar-brand" alt="Home page"></a>
                 </div>
                 <div class="navigation-bar-item">
                     <!--                    <a href="event.html">Log out</a>-->
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </nav>
-        <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <nav role="navigation" id="wb-bc" property="breadcrumb" aria-labelledby="breadcrumbs">
             <h2>You are here:</h2>
             <div class="container">
                 <div class="row">
@@ -96,7 +96,7 @@
         <div class="row">
             <div class="col-md-6 branding__event">
                 <h1 property="name" id="wb-cont">G7 Summit Event</h1>
-                <img class="img-responsive" src="./custom/images/card1.jpg" style="margin:20px auto">
+                <img class="img-responsive" src="./custom/images/card1.jpg" style="margin:20px auto" alt="Taormina G8 participants">
                 <p style="margin-bottom:0">The 2018 Group of 7 (G7) will be held in Charlevoix, Québec. We are pleased to welcome you to this event and we will facilitate your registration and accreditation process. </p>
             </div>
             <div class="col-md-6">
@@ -191,7 +191,7 @@
                                             <form action="#" method="get" id="validation-signup">
                                                 <div class="form-group">
                                                     <label for="userEmail">Email address</label>
-                                                    <input type="email" class="form-control" id="serEmail" placeholder="Email">
+                                                    <input type="email" class="form-control" id="userEmail" placeholder="Email">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="userPassword">Password</label>
@@ -230,7 +230,7 @@
 -->
     </main>
     <footer role="contentinfo" id="wb-info">
-        <nav role="navigation" class="container wb-navcurr">
+        <nav role="navigation" class="container wb-navcurr" aria-labelledby="navFooter">
             <h2 class="wb-inv">About government</h2>
             <ul class="list-unstyled colcount-sm-2 colcount-md-3">
                 <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
