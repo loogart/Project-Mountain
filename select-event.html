@@ -68,14 +68,15 @@
     </ul>
 
     <!-- header and navigation -->
+    <!-- registration header -->
     <header role="banner">
-        <nav class="navigation-bar">
-            <div class="container">
+        <nav class="navigation-bar" aria-labelledby="Nav1">
+            <div class="container" id="Nav1">
                 <div class="navigation-bar-item">
-                    <img src="custom/images/fip-en.svg" class="navigation-bar-brand">
+                    <a href="index.html"><img src="custom/images/fip-en.svg" class="navigation-bar-brand" alt="Home page"></a>
                 </div>
                 <div class="navigation-bar-item">
-                    <!--                    <a href="event.html">Log out</a>-->
+                    <!-- <a href="event.html">Log out</a>-->
                     <a href="#!">Français</a>
                 </div>
             </div>
@@ -105,7 +106,7 @@
                     <!-- link to specific event registration page -->
                     <a href="event.html">
                         <!-- Card image placeholder goes here -->
-                        <img class="card-image" src="./custom/images/card1.jpg">
+                        <img class="card-image" src="./custom/images/card1.jpg" alt="G8 Taormina participants">
                     </a>
                     <div class="card-content">
                         <!-- Card title -->
@@ -124,7 +125,7 @@
             <div class="col-sm-4">
                 <div class="card">
                     <!-- card image size 720x280 -->
-                    <a href="event.html"><img class="card-image" src="./custom/images/card2.jpg"></a>
+                    <a href="event.html"><img class="card-image" src="./custom/images/card2.jpg" alt="Royal Tour people"></a>
                     <div class="card-content">
                         <h3>The Royal Tour</h3>
                         <p class="date">June 8-9, 2017</p>
@@ -135,7 +136,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="card">
-                    <a href="event.html"><img class="card-image" src="./custom/images/card3.jpg"></a>
+                    <a href="event.html"><img class="card-image" src="./custom/images/card3.jpg" alt="Justin Trudeau signing document"></a>
                     <div class="card-content">
                         <h3>NAFTA Negosh</h3>
                         <p class="date">June 8-9, 2017</p>
@@ -165,9 +166,9 @@
     </main>
     
     <!-- footer -->
-    <footer role="contentinfo" id="wb-info">
-        <nav role="navigation" class="container wb-navcurr">
-            <h2 class="wb-inv">About government</h2>
+      <footer role="contentinfo" id="wb-info">
+        <nav role="navigation" class="container wb-navcurr" aria-labelledby="navFooter">
+            <h2 class="wb-inv" id="navFooter">About government</h2>
             <ul class="list-unstyled colcount-sm-2 colcount-md-3">
                 <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
                 <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
