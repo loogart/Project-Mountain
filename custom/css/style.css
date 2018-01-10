@@ -476,6 +476,7 @@ nav.navigation-bar.light .navigation-bar-item a {
     width: auto;
 }
 
+
 @media (max-width:767px) {
     nav.navigation-bar .container,
     nav.navigation-bar .container-fluid {
@@ -644,4 +645,12 @@ nav.navigation-bar.light .navigation-bar-item a {
 
 .label {
     white-space: normal;
+}
+
+@media (min-width:992px){
+  .branding__event{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+  }
 }
