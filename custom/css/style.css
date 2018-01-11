@@ -54,6 +54,29 @@ main {
     object-fit: cover;
 }
 
+.card-bar{
+    width: 100%;
+    height:6px;
+    background-color:#ccc;
+    display: block;
+}
+
+.card-bar__media{
+  background-color:#F09D38;
+}
+
+.card-bar__delegates{
+  background-color:#4C97B8;
+}
+
+.card-bar__suppliers{
+  background-color:#507948;
+}
+
+.card-bar__guests{
+  background-color:#335075;
+}
+
 .card-content {
     padding: 20px;
 }
@@ -61,6 +84,14 @@ main {
 .card h3 {
     color: #335075;
     margin-top: 0;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a.action {
+  text-decoration: underline;
 }
 
 .card p.date {
@@ -71,7 +102,15 @@ main {
 .card p.description {
     color: #333333;
 }
-
+.card p.description.roles{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px;     /* fallback */
+  max-height: 44px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
 /* card role extention */
 
 .card-role {
@@ -116,7 +155,7 @@ a.sign-in {
 /* progress bar customization */
 
 section.progress-bar-holder {
-    padding-top: 26px;
+    padding-top: 16px;
 }
 
 .flexer,
@@ -443,16 +482,16 @@ nav.navigation-bar .container-fluid {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    margin-left:0;
 }
 
-.navigation-bar-link:not(:last-child) {
-    margin-right: 30px;
-}
 
 nav.navigation-bar .navigation-bar-item a {
     color: #fff;
     font-size: 1.4rem;
-    margin-left: 20px;
+}
+.navigation-bar-item:not(:first-child) a{
+  margin-left:20px;
 }
 
 nav.navigation-bar.light {
@@ -506,7 +545,6 @@ nav.navigation-bar.light .navigation-bar-item a {
 /* type ahead css */
 
 .tt-query,
-
 .tt-hint {
     width: 100%;
     height: 30px;
@@ -641,16 +679,13 @@ nav.navigation-bar.light .navigation-bar-item a {
     }
 }
 
-/* .NET helpers */
-
-.label {
-    white-space: normal;
-}
-
 @media (min-width:992px){
   .branding__event{
     position:sticky;
     position: -webkit-sticky;
     top:0;
+    z-index:69;
+    background-color: #fff;
+    border-bottom:1px dotted #ccc;
   }
 }

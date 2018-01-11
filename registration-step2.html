@@ -22,14 +22,14 @@
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<link href="./wet/GCWeb/assets/favicon.ico" rel="shortcut icon" />
-		
+
 		<link rel="stylesheet" href="./wet/GCWeb/css/ie8-theme.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="./wet/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
     <!--[if lte IE 9]>
-		
-		
+
+
 		<![endif]-->
     <noscript><link rel="stylesheet" href="./wet/wet-boew/css/noscript.min.css" /></noscript>
     <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
@@ -84,149 +84,137 @@
                 </div>
             </div>
         </nav>
-        <nav role="navigation" id="wb-bc" property="breadcrumb">
-            <h2>You are here:</h2>
-            <div class="container">
-                <div class="row">
-                    <ol class="breadcrumb">
-                        <li><a href="select-event.html">Home</a></li>
-                        <li>G7 Summit</li>
-                        <li>Registration</li>
-                    </ol>
-                </div>
-            </div>
-        </nav>
     </header>
 
+    <!-- progress bar and section title-->
+    <nav class="branding__event" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <section class="progress-bar-holder">
+                <ul class="progress-indicator">
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <i class="fa fa-check-circle" style="color:forestgreen"></i> <a href="registration.html">1. Organization</a>
+                    </li>
+                    <li class="active">
+                        <span class="bubble"></span> 2. Badge
+                    </li>
+                    <li>
+                        <span class="bubble"></span> 3. Personal
+                    </li>
+                    <li>
+                        <span class="bubble"></span> 4. Contact
+                    </li>
+                    <li>
+                        <span class="bubble"></span> 5. Review
+                    </li>
+                </ul>
+            </section>
+          </div>
+          </div>
+        </div>
+      </nav>
+
     <!-- main content designed by Chris -->
-    <div class="container">
-        <main property="mainContentOfPage" role="main">
-            <!-- progress bar and section title-->
+    <main class="container" property="mainContentOfPage" role="main">
+        <!-- registration meat and potatoes -->
+        <section class="registration">
             <div class="row">
-                <!-- progress bar and section title-->
                 <div class="col-md-offset-2 col-md-8">
-                    <section class="progress-bar-holder">
-                        <ul class="progress-indicator">
-                            <li class="completed">
-                                <span class="bubble"></span>
-                                <i class="fa fa-check-circle" style="color:forestgreen"></i> <a href="registration.html">1. Organization</a>
-                            </li>
-                            <li class="active">
-                                <span class="bubble"></span> 2. Badge
-                            </li>
-                            <li>
-                                <span class="bubble"></span> 3. Personal
-                            </li>
-                            <li>
-                                <span class="bubble"></span> 4. Contact
-                            </li>
-                            <li>
-                                <span class="bubble"></span> 5. Review
-                            </li>
-                        </ul>
-                    </section>
-                    <h1>2. Your badge design</h1>
-                    <p>The following information and photograph will appear on your official badge for the event.</p>
-                </div>
-            </div>
-            <!-- registration meat and potatoes -->
-            <section class="registration">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <div class="wb-frmvld">
-                            <h2>A. Badge information</h2>
-                            <form action="#" method="get" id="validation-signup-3">
+                  <h1>2. Your badge design</h1>
+                  <p>The following information and photograph will appear on your official badge for the event.</p>
+                    <div class="wb-frmvld">
+                        <h2>A. Badge information</h2>
+                        <form action="#" method="get" id="validation-signup-3">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- first name -->
+                                    <div class="form-group">
+                                        <label for="word1" class="required"><span class="field-name">First name on badge</span></label>
+                                        <input class="form-control" id="word1" name="word1" type="text" data-rule-maxWords="2" placeholder="First name" required="required" />
+                                    </div>
+                                    <!-- last name -->
+                                    <div class="form-group">
+                                        <label for="word2" class="required"><span class="field-name">Last name on badge</span></label>
+                                        <input class="form-control" id="word2" name="word2" type="text" data-rule-maxWords="2" placeholder="Last name" required="required" />
+                                    </div>
+                                    <!-- profession select -->
+                                    <div class="form-group">
+                                        <label for="title1" class="required">
+                                            <span class="field-name">Badge pick-up location</span>
+                                        </label>
+                                        <select class="form-control" id="badge-location1" name="badge-location1" required="required">
+                                            <option label="Select a location"></option>
+                                            <option value="1">Ottawa, ON</option>
+                                            <option value="2">Gatineau, QC</option>
+                                            <option value="3">Charlevoix, QC</option>
+                                            <option value="4">In the Hood, MTL</option>
+                                            <option value="5" selected>Onsite</option>
+                                        </select>
+                                        <p class="requirements">Select the location you would like to pick up your access badge prior to the event.</p>
+                                        <!--                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.285217584817!2d-70.14758434820754!3d47.620586794901826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbfaa0abab30463%3A0x32e59d2c0af6e550!2sFairmont+Le+Manoir+Richelieu!5e0!3m2!1sen!2sca!4v1508176699906" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2>B. Badge photo</h2>
+                            <!-- upload letter -->
+                            <div class="form-group">
+                                <label for="file1" class="required"><span class="field-name">Upload your badge photo</span> <strong class="required">(required)</strong></label>
+                                <input id="file1" name="file1" type="file" required="required" />
+                            </div>
+                            <ul class="requirements">
+                                <li>Recent passport-style photo</li>
+                                <li>A photograph of your drivers lisence, passport or any other picture id will not be accepted</li>
+                                <li>Only the following formats are accepted .jpg, jpeg or gif</li>
+                                <li>Maximum file size of 2 MB</li>
+                                <li>The photographs must show the full front view of the head, with the face in the middle of the image</li>
+                                <li>Pale or white background</li>
+                                <li>No hats or sunglasses</li>
+                                <li>Photo must be in colour</li>
+                            </ul>
+
+                            <div class="well">
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <!-- first name -->
-                                        <div class="form-group">
-                                            <label for="word1" class="required"><span class="field-name">First name on badge</span></label>
-                                            <input class="form-control" id="word1" name="word1" type="text" data-rule-maxWords="2" placeholder="First name" required="required" />
-                                        </div>
-                                        <!-- last name -->
-                                        <div class="form-group">
-                                            <label for="word2" class="required"><span class="field-name">Last name on badge</span></label>
-                                            <input class="form-control" id="word2" name="word2" type="text" data-rule-maxWords="2" placeholder="Last name" required="required" />
-                                        </div>
-                                        <!-- profession select -->
-                                        <div class="form-group">
-                                            <label for="title1" class="required">
-                                                <span class="field-name">Badge pick-up location</span> 
-                                            </label>
-                                            <select class="form-control" id="badge-location1" name="badge-location1" required="required">
-                                                <option label="Select a location"></option>
-                                                <option value="1">Ottawa, ON</option>
-                                                <option value="2">Gatineau, QC</option>
-                                                <option value="3">Charlevoix, QC</option>
-                                                <option value="4">In the Hood, MTL</option>
-                                                <option value="5" selected>Onsite</option>
-                                            </select>
-                                            <p class="requirements">Select the location you would like to pick up your access badge prior to the event.</p>
-                                            <!--                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.285217584817!2d-70.14758434820754!3d47.620586794901826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbfaa0abab30463%3A0x32e59d2c0af6e550!2sFairmont+Le+Manoir+Richelieu!5e0!3m2!1sen!2sca!4v1508176699906" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                    <div class="col-sm-7">
+                                        <p><b>Original uploaded photo</b></p>
+                                        <img id="image" src="./custom/images/peter-mcgovern.jpg" alt="Picture" style="max-height:200px">
+                                        <p class="requirements">Move and scale the image-cropping tool to ensure your head fits the required badge photo visual guidelines.</p>
+                                    </div>
+
+                                    <div class="col-sm-offset-1 col-sm-4">
+                                        <p><b>Badge final photo</b></p>
+                                        <div class="preview">
                                         </div>
                                     </div>
                                 </div>
-                                <hr>
-                                <h2>B. Badge photo</h2>
-                                <!-- upload letter -->
-                                <div class="form-group">
-                                    <label for="file1" class="required"><span class="field-name">Upload your badge photo</span> <strong class="required">(required)</strong></label>
-                                    <input id="file1" name="file1" type="file" required="required" />
-                                </div>
-                                <ul class="requirements">
-                                    <li>Recent passport-style photo</li>
-                                    <li>A photograph of your drivers lisence, passport or any other picture id will not be accepted</li>
-                                    <li>Only the following formats are accepted .jpg, jpeg or gif</li>
-                                    <li>Maximum file size of 2 MB</li>
-                                    <li>The photographs must show the full front view of the head, with the face in the middle of the image</li>
-                                    <li>Pale or white background</li>
-                                    <li>No hats or sunglasses</li>
-                                    <li>Photo must be in colour</li>
-                                </ul>
-
-                                <div class="well">
-                                    <div class="row">
-                                        <div class="col-sm-7">
-                                            <p><b>Original uploaded photo</b></p>
-                                            <img id="image" src="./custom/images/peter-mcgovern.jpg" alt="Picture" style="max-height:200px">
-                                            <p class="requirements">Move and scale the image-cropping tool to ensure your head fits the required badge photo visual guidelines.</p>
-                                        </div>
-
-                                        <div class="col-sm-offset-1 col-sm-4">
-                                            <p><b>Badge final photo</b></p>
-<!--                                            <span><img src="./custom/images/head-outline.svg" class="badge-photo-overlay"></span>-->
-                                            <div class="preview">
-                                            </div>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="photo-approve1" class="required"><span class="field-name">Badge photo review</span> <strong class="required">(required)</strong></label>
+                                        <div class="checkbox">
+                                            <label for="photo-approve1"><input type="checkbox" name="photo-approve" value="1" id="photo-approve1" required="required" />&#160;&#160; I have reviewed my badge photo and approve it for printing.</label>
                                         </div>
                                     </div>
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <label for="photo-approve1" class="required"><span class="field-name">Badge photo review</span> <strong class="required">(required)</strong></label>
-                                            <div class="checkbox">
-                                                <label for="photo-approve1"><input type="checkbox" name="photo-approve" value="1" id="photo-approve1" required="required" />&#160;&#160; I have reviewed my badge photo and approve it for printing.</label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </form>
-                        </div>
+                                </fieldset>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <!-- fixed action buttons -->
-            <section class="fixed-actions">
-                <div class="container">
-                    <!-- wizard buttons -->
-                    <ul class="list-inline text-right">
-                        <li><a href="registration.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous <span class="hidden-xs">step</span></a></li>
-                        <li><a href="registration-step3.html" class="btn btn-primary">Next step <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </section>
-
-        </main>
-    </div>
+    <!-- fixed action buttons -->
+    <nav class="fixed-actions">
+        <div class="container">
+            <!-- wizard buttons -->
+            <ul class="list-inline text-right">
+                <li><a href="registration.html" class="btn btn-default"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous <span class="hidden-xs">step</span></a></li>
+                <li><a href="registration-step3.html" class="btn btn-primary">Next step <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -234,7 +222,7 @@
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<script src="./wet/wet-boew/js/ie8-wet-boew2.min.js"></script>
-		
+
 		<![endif]-->
     <script src="./wet/GCWeb/js/theme.min.js"></script>
     <script src="./custom/js/cropper.js"></script>
