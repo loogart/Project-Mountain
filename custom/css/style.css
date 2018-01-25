@@ -698,6 +698,9 @@ nav.navigation-bar.light .navigation-bar-item a {
     }
 }
 
+.sidebar {
+    z-index: 2;
+}
 
 @media (min-width:992px) {
     .branding__event {
@@ -717,38 +720,134 @@ nav.navigation-bar.light .navigation-bar-item a {
     .sidebar {
         position: sticky;
         position: -webkit-sticky;
-        top:15px;
+        top: 15px;
     }
 
 }
 
-.back-to-section{
-    
-}
-.side-menu .list-group a.list-group-item{
-    background-color:#f9f9f9;
+.back-to-section {
+    margin-bottom: 20px;
 }
 
-.side-menu .list-group a.list-group-item.active{
-    background-color:#ccc;
+.side-menu .list-group a.list-group-item {
+    background-color: #f9f9f9;
+}
+
+.side-menu .list-group a.list-group-item.active {
+    background-color: #ccc;
     border-color: #ccc;
+    color: #335075;
 }
 
-.side-menu .list-group a.list-group-item.active:hover{
-    color:#233955;
+.side-menu .list-group a.list-group-item.active:hover {
+    color: #233955;
 }
 
 .admin-view {
-    padding:15px;    
+    padding: 15px;
 }
 
-.admin-view a:visited{
-    color:#335075;
+.admin-view a:visited {
+    color: #335075;
 }
 
-.admin-view a:hover{
-    color:#0535d2;
+.admin-view a:hover::btn {
+    color: #0535d2;
+}
+
+.admin-area .panel {
+    margin-top: 15px;
+}
+
+.admin-area h2 {
+    margin-top: 20px;
+}
+
+.top {
+    padding-top: 5px;
+    width: 100%;
+}
+
+.dataTables_filter input {
+    display: inline-block;
+    height: 37px;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 
+.admin-list-person {
+    transition: all .5s ease-out;
+    animation: fadein .5s;
+    -moz-animation: slideRight .5s;
+    -webkit-animation: slideRight .5s;
+    -o-animation: slideRight .5s;
+}
 
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.admin-person {
+    transition: all .5s ease-out;
+    animation: fadein .5s;
+    -moz-animation: slideLeft .5s;
+    -webkit-animation: slideLeft .5s;
+    -o-animation: slideLeft .5s;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.upload-placeholder {
+    height:200px;
+    width:100%;
+    display: block;
+    background-color: #e3e3e3;
+    object-fit: contain;
+    border:1px dotted #ccc;
+}

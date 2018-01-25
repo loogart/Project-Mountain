@@ -99,11 +99,12 @@
                     <a href="./event.html" class="btn btn-default btn-block" style="margin-bottom:20px;">Log out</a>
                 </nav>
             </div>
-            <div class="col-md-9 admin-area">
-                <section>
-                   <a href="#!" class"back-to-section"><i class="fa fa-arrow-left"></i> Section</a>
-                    <h2 style="margin-top:20px;">Accreditations</h2>
-                    <p>Search for a person, organization, organization, status, etc.</p>
+            <div class="col-md-9 admin-area admin-list-person">
+<!--                <a href="#!" class="back-to-section"><i class="fa fa-arrow-left"></i> Section</a>-->
+                <h2>Accreditations</h2>
+                <p><b>Smart search:</b> Search by name, country, organization, status, ID.</p>
+                <div class="panel panel-default">
+                    <div class="panel-body">
                         <div class="table-responsive">
                             <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
             "bDeferRender": true,
@@ -120,7 +121,7 @@
                 { "data": "TYPE", "visible": true },
                 { "data": "RCMP STATUS", "visible": true }
               ]}'>
-                               
+
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -136,7 +137,8 @@
                                 </thead>
                             </table>
                         </div>
-                </section>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
