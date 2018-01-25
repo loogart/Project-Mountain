@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Admin Panel</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Meta data -->
+    <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+    <!-- Meta data-->
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./wet/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="./wet/GCWeb/css/theme.css">
+    <link rel="stylesheet" href="./custom/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+		<link href="./wet/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="./wet/GCWeb/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./wet/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+    <!--[if lte IE 9]>
+
+
+		<![endif]-->
+    <noscript><link rel="stylesheet" href="./wet/wet-boew/css/noscript.min.css" /></noscript>
+    <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+    <script>
+        dataLayer1 = [];
+
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+    <noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer1' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer1', 'GTM-TLGQ9K');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+        </li>
+        <li class="wb-slc visible-sm visible-md visible-lg">
+            <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+        </li>
+    </ul>
+
+    <header role="banner">
+        <nav class="navigation-bar" aria-labelledby="Nav1">
+            <div class="container" id="Nav1">
+                <div class="navigation-bar-item home">
+                    <a href="index.html"><img src="custom/images/fip-en.svg" class="navigation-bar-brand" alt="Home page"></a>
+                </div>
+                <div class="navigation-bar-item">
+                    <a href="event.html">Log out</a>
+                    <a href="#!">Français</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" property="mainContentOfPage" class="container-fluid admin-view">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <h4 class="wb-inv">Settings</h4>
+                <nav class="side-menu">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active"><i class="fa fa-address-card-o"></i> Accreditations</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-sliders"></i> Parameters</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-calendar"></i> Events</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-users"></i> Organizations</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-book"></i> Reports</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-user-o"></i> Delegates</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-user"></i> Secretariat</a>
+                        <a href="#" class="list-group-item"><i class="fa fa-cog"></i> Tools</a>
+                    </div>
+                    <a href="./event.html" class="btn btn-default btn-block" style="margin-bottom:20px;">Log out</a>
+                </nav>
+            </div>
+            <div class="col-md-9 admin-area">
+                <section>
+                   <a href="#!" class"back-to-section"><i class="fa fa-arrow-left"></i> Section</a>
+                    <h2 style="margin-top:20px;">Accreditations</h2>
+                    <p>Search for a person, organization, organization, status, etc.</p>
+                        <div class="table-responsive">
+                            <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
+            "bDeferRender": true,
+            "ajaxSource": "ajax/datasource.json",
+            "order": [0, "asc"],
+             "columns": [
+                { "data": "ID", "className": "nws-tbl-ttl h4" },
+                { "data": "EMAIL", "className": "nws-tbl-date" },
+                { "data": "FAMILY NAME", "className": "nws-tbl-dept" },
+                { "data": "FIRST NAME", "className": "nws-tbl-type" },
+                { "data": "ORGANIZATION",  "className": "nws-tbl-desc" },
+                { "data": "ORG COUNTRY",  "visible": true },
+                { "data": "DATE CREATED",  "visible": true },
+                { "data": "TYPE", "visible": true },
+                { "data": "RCMP STATUS", "visible": true }
+              ]}'>
+                               
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Email</th>
+                                        <th>Family name</th>
+                                        <th>First name</th>
+                                        <th>Organization</th>
+                                        <th>Org. Country</th>
+                                        <th>Date created</th>
+                                        <th>Type</th>
+                                        <th>RCMP Status</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="./wet/wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+		<script src="./wet/wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+		<![endif]-->
+    <script src="./wet/GCWeb/js/theme.min.js"></script>
+    <script src="./custom/js/scripts.js"></script>
+</body>
+
+</html>
